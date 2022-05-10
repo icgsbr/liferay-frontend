@@ -1,0 +1,30 @@
+.home-sidebar-container {
+    text-align: center;
+}
+
+.home-sidebar {
+    margin-top: 16px;
+}
+
+.avatar-side-home {
+    width: 96px;
+    height: 96px;
+}
+
+.name-side-home {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.job-side-home {
+    font-size: 12px;
+}
+
+.mg-top {
+    margin-top: 24px;
+}
+
+.text-custom-value {
+    font-size: 20px;
+    font-weight: bold;
+}
