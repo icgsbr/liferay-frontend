@@ -1,0 +1,10 @@
+.popup-menu-form-container {
+    position: absolute;
+    z-index: 1;
+    display: none;
+}
+
+.list-group-item, .menu-popup-link-form {
+    text-decoration: none;
+    color: #0b63ce;
+}

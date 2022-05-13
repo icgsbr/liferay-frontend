@@ -4,18 +4,13 @@ const sidebarInfo = [
         avatar: "https://static.vecteezy.com/ti/vetor-gratis/p2/2002247-icone-de-avatar-de-mulher-negra-bonita-grátis-vetor.jpg",
         name: "Maria",
         job: "Auxiliar administrativo",
-        titleEvp: "EVP 2022",
+        titleEvpYear: "EVP",
         titleDonate: "MINHAS DOAÇÕES",
-        donateText: "Valor total",
-        donateValue: "R$ 130.00",
+        donateMax: "R$ 300.00",
+        donateValue: 130,
         titleActivity: "MINHAS ATIVIDADES",
-        activityText: "Horas obtidas",
-        activityValue: "8 Hrs",
-        titleGoals: "META DO SEMESTRE",
-        goalsText: "Valor de doações",
-        goalsValue: "R$ 300.00",
-        activityGoalsText: "Horas em atividades",
-        activityGoalsValue: "15 Hrs",
+        activityMax: "15 Hrs",
+        activityValue: 8,
     }
 ];
 

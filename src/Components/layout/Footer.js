@@ -7,8 +7,8 @@ function Footer() {
     const dateyear = datecopyright.getFullYear();
 
     return(
-        <footer className="footer footer-container">
-            <div className="footer-container-text">
+        <footer className="footer">
+            <div className="footer-container">
                 <span id="footer-text-info">Copyright © {dateyear} Power by Squad-Lifray</span>
             </div>
         </footer>

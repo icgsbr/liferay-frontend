@@ -1,0 +1,33 @@
+.home-user-container {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.home-user-title-container {
+    color: #0b63ce;
+}
+
+.overflow-scroll {
+    top: 0;
+    bottom: 0;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.sidebar-left-home {
+    top: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.sidebar-right-home {
+    position: relative;
+    height: 100vh !important;
+}
+
+.center-container-home, .sidebar-left-home, .sidebar-right-home {
+    z-index: -1;
+}

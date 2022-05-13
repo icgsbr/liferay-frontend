@@ -3,8 +3,23 @@ import {NavLink} from "react-router-dom";
 
 import "./HeaderUser.css";
 import logo from "./../../images/ic_liferay_white.png";
+import PopupMenuForm from "../../Pages/User/PopupMenuForm";
 
 function Navbar() {
+    var isShowing = false;
+
+    function handlePopupForm() {
+        const popupMenuFormContainer = document.getElementsByClassName("popup-menu-form-container")[0];
+    
+        if (isShowing) {
+            isShowing = false;
+            popupMenuFormContainer.style.display = "none";
+        } else {
+            isShowing = true;
+            popupMenuFormContainer.style.display = "block";
+        }
+    }
+
     return (
         <div className="header-user-container">
             <header className="header-user">
@@ -25,7 +40,8 @@ function Navbar() {
                                     <NavLink className="nav-link" to="/instituitions">Instituições</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/forms">Formulários</NavLink>
+                                    <NavLink className="nav-link" to="" onClick={handlePopupForm}>Formulários</NavLink>
+                                    <PopupMenuForm />
                                 </li>
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/admin">Administrador</NavLink>
