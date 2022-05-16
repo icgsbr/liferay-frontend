@@ -1,6 +1,5 @@
 const titleFeedInfoGlobal = [
     {
-        titleevpmain: "DOAÇÕES E ATIVIDADES VOLUNTÁRIAS",
         subtitleevp: "EVP",
         titledonateglobal: "Doações Global",
         titledonatevalor: "Valor total:",

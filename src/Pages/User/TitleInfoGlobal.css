@@ -1,18 +1,12 @@
-.info-global-left-container {
+.title-global-style {
+    color: #0b63ce;
+}
+
+.info-global-container {
     color: #ffffff;
     padding: 16px;
     border-radius: 0 50px 50px 0;
     background-color: #0b63ce;
-    margin-right: 8px;
-    margin-bottom: 16px;
-}
-
-.info-global-right-container {
-    color: #ffffff;
-    padding: 16px;
-    border-radius: 50px 0 0 50px;
-    background-color: #0b63ce;
-    margin-left: 8px;
     margin-bottom: 16px;
 }
 
@@ -21,7 +15,12 @@
     margin-left: 8px;
 }
 
-.title-info-global, .info-global {
+.title-info-global {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.info-global {
     font-size: 14px;
     font-weight: bold;
 }

@@ -1,30 +1,31 @@
 import React from "react";
+import { NavLink } from "react-router-dom";
 
-import "./Home.css";
-import HeaderUser from "./../../Components/LayoutUser/HeaderUser";
-import titleGlobalInfo from "./../../title-info-global";
+import "./RegisterActivity.css";
+import HeaderUser from "../../Components/LayoutUser/HeaderUser";
+import titleGlobalInfo from "../../title-info-global";
 import TitleInfoGlobal from "./TitleInfoGlobal";
-import homeUserFeedInfo from "./../../home-user-feed-info";
-import HomeUserFeedCard from "./../User/HomeUserFeedCard";
-import sidebarInfo from "./../../sidebar-info";
-import SidebarHomeUser from "./../User/HomeUserSideBar";
-import Footer from "./../../Components/layout/Footer";
+import registerActivityInfo from "./../../register-activity-info";
+import RegisterActivityCard from "./../User/RegisterActivityCard";
+import sidebarInfo from "../../sidebar-info";
+import SidebarHomeUser from "./HomeUserSideBar";
+import Footer from "../../Components/layout/Footer";
 
-function Home() {
+function RegisterActivity() {
     const mdate = new Date();
 
     return(
-        <div className="home-user-container overflow-scroll">
+        <div className="register-activity-container overflow-scroll">
             <HeaderUser/>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-2 sidebar-left-home">
+                    <div className="col-md-2 sidebar-left-register-activity">
                     </div>
-                    <div className="col-md-8 center-container-home">
+                    <div className="col-md-8 center-register-activity">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
-                                    titleevpmain="DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"
+                                    titleevpmain="REGISTRO DE ATIVIDADES"
                                     titledonateglobal={info.titledonateglobal}
                                     titledonatevalor={info.titledonatevalor}
                                     donatevalue={info.donatevalue}
@@ -38,22 +39,24 @@ function Home() {
                                 />
                             )}
                         </div>
-                        <div className="feed-home-container">
-                            {homeUserFeedInfo.map((info) =>
-                                <HomeUserFeedCard
+                        <div className="feed-activity-container">
+                            {registerActivityInfo.map((info) =>
+                                <RegisterActivityCard
                                     img={info.img}
-                                    avatar={info.avatar}
-                                    username={info.username}
-                                    userjob={info.userjob}
-                                    nameinst={info.nameinst}
-                                    dateinst={info.dateinst}
-                                    localeinst={info.localeinst}
+                                    name={info.name}
+                                    phone={info.phone}
+                                    city={info.city}
+                                    activityValue={info.activityValue}
+                                    activityText={info.activityText}
+                                    activityDate={info.activityDate}
+                                    activityTitle={info.activityTitle}
+                                    activityState={info.activityState}
                                 />
                             )}
                         </div>
                     </div>
-                    <div className="col-md-2 sidebar-right-home">
-                        <div className="sidebar-home-container">
+                    <div className="col-md-2 sidebar-right-register-activity">
+                        <div className="sidebar-activity-container">
                             {sidebarInfo.map((info) =>
                                 <SidebarHomeUser
                                     avatar={info.avatar}
@@ -68,12 +71,15 @@ function Home() {
                                 />
                             )}
                         </div>
+                        <div className="button-new-activity-container">
+                            <NavLink className="btn btn-primary button-new-register-activity" to="">Criar nova atividade</NavLink>
+                        </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     );
 }
 
-export default Home;
+export default RegisterActivity;

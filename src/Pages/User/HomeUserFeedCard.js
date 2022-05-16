@@ -1,26 +1,28 @@
 import React from "react";
 
-import "./HomeUserFeedCard.css";
-
 function HomeUserFeedCard(props) {
+    const handlerDetailFeedCard = () => {
+        alert('Click OK!');
+    }
+
     return(
-        <div className="homeUserFeedContainer">
-            <div className="card mb-3">
-                <img className="card-img-top img-fluid" src={props.img} alt="imagem"/>
-                <div className="card-body">
-                    <div className="row">
-                        <div className="col">
-                            <div className="card-avatar-name-container">
-                                <img className="avatar-card avatar-user-home-feed" src={props.avatar} alt="avatar"/><br/>
-                                <span  className="text-home-feed-style">{props.username}</span>
-                            </div>
-                            <span id="job-user-home-feed">{props.userjob}</span>
-                        </div>
-                        <div className="col card-institute-info-containner">
-                            <span className="text-home-feed-style">{props.nameinst}</span><br/>
-                            <span id="date-inst-home-feed">{props.dateinst}</span><br/>
-                            <span>{props.localeinst}</span>
-                        </div>
+        <div className="card mb-3">
+            <div className="row g-0" onClick={() => {handlerDetailFeedCard()}}>
+                <div className="col-md-2">
+                    <img className="img-fluid rounded-start" src={props.img} alt="image card"/>
+                </div>
+                <div className="col-md-6">
+                    <div className="card-body card-body-home">
+                        <h5 className="card-title title-card-home">{props.nameinst}</h5>
+                        <span className="card-text text-card-home">{props.dateinst}</span><br/>
+                        <span className="card-text text-card-home">{props.localeinst}</span><br/>
+                    </div>
+                </div>
+                <div className="col-md-4">
+                    <div className="card-body card-body-home">
+                        <img className="avatar-card avatar-card-home" src={props.avatar} alt="avatar"/><br/>
+                        <h5 className="card-title title-card-home">{props.username}</h5>
+                        <span className="card-text text-card-home">{props.userjob}</span>
                     </div>
                 </div>
             </div>
