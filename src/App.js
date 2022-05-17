@@ -1,25 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Suspense} from "react";
+import {BrowserRouter, Routes, Route} from "react-router-dom";
+
+import Login from "./Components/layout/Login";
+import Home from "./Pages/User/Home";
+import RegisterActivity from "./Pages/User/RegisterActivity";
+import Institution from "./Pages/User/Institution";
+
+import "bootstrap/dist/css/bootstrap.min.css";
+import "./App.css";
 
 function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    return(
+        <div className="app-container">
+            <Suspense fallback={<div>Loading page...</div>}>
+                <BrowserRouter>
+                    <Routes>
+                        <Route path="/" element={<Login/>}/>
+                        <Route path="/home" element={<Home/>}/>
+                        <Route path="/registeractivity" element={<RegisterActivity/>}/>
+                        <Route path="/institution" element={<Institution/>}/>
+                    </Routes>
+                </BrowserRouter>
+            </Suspense>
+        </div>
+    );
 }
 
 export default App;

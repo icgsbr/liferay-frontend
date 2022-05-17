@@ -1,0 +1,50 @@
+.register-activity-container {
+    position: relative;
+    top: 0;
+    bottom: 0;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.overflow-scroll {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.sidebar-right-register-activity {
+    position: relative;
+    height: 100vh !important;
+}
+
+.button-new-activity-container {
+    width: 100%;
+    margin-top: 36px;
+    text-align: center;
+}
+
+.button-new-register-activity {
+    border-radius: 36px !important;
+}
+
+.signal-state-reg-activity {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #ffa500;
+}
+
+.card-body-activity {
+    padding: 8px !important;
+}
+
+.title-card-activity {
+    font-size: 16px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.text-card-activity {
+    font-size: 12px !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}

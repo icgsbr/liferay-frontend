@@ -1,0 +1,26 @@
+.login-page-container {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #0b63ce;
+}
+
+#title-card-login {
+    margin-bottom: 24px;
+}
+
+.login-page-card {
+    padding: 24px;
+    width: 50%;
+    max-width: 320px;
+    border-radius: 24px;
+    background-color: #ffffff;
+}
+
+.buttom-submit-custom {
+    width: 100% !important;
+}
