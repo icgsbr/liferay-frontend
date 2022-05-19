@@ -2,12 +2,12 @@ import React from "react";
 
 import "./Home.css";
 import HeaderUser from "./../../Components/LayoutUser/HeaderUser";
-import titleGlobalInfo from "./../../title-info-global";
-import TitleInfoGlobal from "./TitleInfoGlobal";
-import homeUserFeedInfo from "./../../home-user-feed-info";
-import HomeUserFeedCard from "./../User/HomeUserFeedCard";
-import sidebarInfo from "./../../sidebar-info";
-import SidebarHomeUser from "./../User/HomeUserSideBar";
+import titleGlobalInfo from "../../Infos/title-info-global";
+import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
+import homeUserFeedInfo from "../../Infos/home-user-feed-info";
+import HomeUserFeedCard from "../../Components/CardsUser/HomeUserFeedCard";
+import sidebarInfo from "../../Infos/sidebar-info";
+import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
 import Footer from "./../../Components/layout/Footer";
 
 function Home() {
