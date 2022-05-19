@@ -18,6 +18,8 @@
 
 .home-sidebar-container {
     text-align: center;
+    color:#0b63ce;
+
 }
 
 .home-sidebar {
@@ -94,12 +96,14 @@ progress {
 
 .title-card-home {
     font-size: 16px !important;
+    color:#0b63ce; 
     margin: 0 !important;
     padding: 0 !important;
 }
 
 .text-card-home {
     font-size: 12px !important;
+    color:#0b63ce;
     margin: 0 !important;
     padding: 0 !important;
 }

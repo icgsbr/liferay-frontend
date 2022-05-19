@@ -41,11 +41,11 @@ function Institution() {
                         <div className="filter-institution-container">
                             <input type="search" id="search-institution" placeholder="Search" name="search"/>
                             <select className="form-select" id="select-filter-institution" name="selectFilterInstitution">
-                                <option value="1" selected>Instituição com mais doações</option>
-                                <option value="2">Instituição com menos doações</option>
+                                <option value="1" selected>Instituição com menos doações</option>
+                                <option value="2">Instituição com mais doações</option>
                             </select>
-                            <button className="btn btn-primary" id="btn-filter-institution">Adicionar nova instituição</button>
-                        </div>
+                            <button className="btn btn-primary" id="btn-filter-institution">Adicionar Instituição</button>
+                            </div>
                         <div className="institution-card-container">
                             {institutionInfo.map((info) =>
                                 <InstitutionCard
@@ -70,6 +70,7 @@ function Institution() {
                                 titleDonate={info.titleDonate}
                                 donateValue={info.donateValue}
                                 donateMax={info.donateMax}
+                                titleActivity = {info.titleActivity}
                                 activityValue={info.activityValue}
                                 activityMax={info.activityMax}
                             />

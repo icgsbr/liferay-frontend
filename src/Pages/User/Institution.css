@@ -5,7 +5,9 @@
     margin-top: 64px;
     margin-bottom: 64px;
 }
-
+.institution-card-container{
+    color:#0b63ce;
+}
 .overflow-scroll {
     height: 100vh;
     overflow-y: scroll;

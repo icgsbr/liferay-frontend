@@ -14,6 +14,7 @@ import Footer from "../../Components/layout/Footer";
 function RegisterActivity() {
     const mdate = new Date();
 
+  
     return(
         <div className="register-activity-container overflow-scroll">
             <HeaderUser/>
@@ -66,6 +67,7 @@ function RegisterActivity() {
                                     titleDonate={info.titleDonate}
                                     donateValue={info.donateValue}
                                     donateMax={info.donateMax}
+                                    titleActivity = {info.titleActivity}
                                     activityValue={info.activityValue}
                                     activityMax={info.activityMax}
                                 />
@@ -80,6 +82,7 @@ function RegisterActivity() {
             <Footer/>
         </div>
     );
+
 }
 
 export default RegisterActivity;

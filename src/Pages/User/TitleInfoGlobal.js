@@ -3,10 +3,12 @@ import React from "react";
 import "./TitleInfoGlobal.css";
 
 function TitleInfoGlobal(props) {
+    const mdate = new Date();
     return(
         <div className="title-global-container">
             <div className="col title-global-style">
-                <p >{props.titleevpmain}</p>
+                <h5 >{props.titleevpmain}</h5>
+                <p className="title-global-style-year"> EVP {mdate.getFullYear()}</p>
             </div>
             <div className="col info-global-container">
                 <span className="title-info-global info-global-style">{props.titledonateglobal}</span>

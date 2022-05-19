@@ -24,7 +24,7 @@ function Home() {
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
-                                    titleevpmain="DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"
+                                    titleevpmain={"DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"}
                                     titledonateglobal={info.titledonateglobal}
                                     titledonatevalor={info.titledonatevalor}
                                     donatevalue={info.donatevalue}
@@ -63,6 +63,7 @@ function Home() {
                                     titleDonate={info.titleDonate}
                                     donateValue={info.donateValue}
                                     donateMax={info.donateMax}
+                                    titleActivity = {info.titleActivity}
                                     activityValue={info.activityValue}
                                     activityMax={info.activityMax}
                                 />

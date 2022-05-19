@@ -27,13 +27,17 @@ function RegisterActivityCard(props) {
                 </div>
                 <div className="col-md-2">
                     <div className="card-body card-body-activity">
-                        <div className="signal-state-reg-activity"></div>
+                        <div className={StateColor()}></div>
                         <span className="card-text text-card-activity">{props.activityTitle}</span>
                     </div>
                 </div>
             </div>
         </div>
     );
+    function StateColor(){
+        let stateClass = "signal-state-reg-activity-"
+        return stateClass += (props.activityTitle == "Concluida") ? "con":"and"
+    }
 }
 
 export default RegisterActivityCard;

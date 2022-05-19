@@ -1,12 +1,12 @@
 const titleFeedInfoGlobal = [
     {
         subtitleevp: "EVP",
-        titledonateglobal: "Doações Global",
+        titledonateglobal: "Doações (Global)",
         titledonatevalor: "Valor total:",
         donatevalue: "R$ 2.235.00",
         titledonatemeta: "Meta:",
         donatemeta: "R$ 3.500.00",
-        titleactivityglobal: "Atividades Global",
+        titleactivityglobal: "Atividades (Global)",
         titleactivityvalor: "Total atingido:",
         activityvalue: "202 Hrs",
         titleactivitymeta: "Meta:",
