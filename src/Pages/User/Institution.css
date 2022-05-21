@@ -1,7 +1,5 @@
 .institution-container {
     position: relative;
-    top: 0;
-    bottom: 0;
     margin-top: 64px;
     margin-bottom: 64px;
 }
@@ -16,20 +14,8 @@
     height: 100vh !important;
 }
 
-.card-body-institute {
-    padding: 8px !important;
-}
-
-.title-card-institute {
-    font-size: 16px !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
-.text-card-institute {
-    font-size: 12px !important;
-    margin: 0 !important;
-    padding: 0 !important;
+.sidebar-institution-container {
+    text-align: center;
 }
 
 .filter-institution-container {

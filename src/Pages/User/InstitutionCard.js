@@ -1,5 +1,7 @@
 import React from "react";
 
+import "./InstitutionCard.css";
+
 function InstitutionCard(props) {
     const handlerStateCard = () => {
         alert('Click OK!');

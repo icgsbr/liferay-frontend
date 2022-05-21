@@ -7,7 +7,7 @@ import TitleInfoGlobal from "./TitleInfoGlobal";
 import homeUserFeedInfo from "./../../home-user-feed-info";
 import HomeUserFeedCard from "./../User/HomeUserFeedCard";
 import sidebarInfo from "./../../sidebar-info";
-import SidebarHomeUser from "./../User/HomeUserSideBar";
+import UserSideBar from "./UserSideBar";
 import Footer from "./../../Components/layout/Footer";
 
 function Home() {
@@ -41,13 +41,17 @@ function Home() {
                         <div className="feed-home-container">
                             {homeUserFeedInfo.map((info) =>
                                 <HomeUserFeedCard
+                                    id={info.id}
                                     img={info.img}
                                     avatar={info.avatar}
                                     username={info.username}
                                     userjob={info.userjob}
                                     nameinst={info.nameinst}
-                                    dateinst={info.dateinst}
-                                    localeinst={info.localeinst}
+                                    phone={info.phone}
+                                    email={info.email}
+                                    donatedate={info.donatedate}
+                                    city={info.city}
+                                    street={info.street}
                                 />
                             )}
                         </div>
@@ -55,7 +59,7 @@ function Home() {
                     <div className="col-md-2 sidebar-right-home">
                         <div className="sidebar-home-container">
                             {sidebarInfo.map((info) =>
-                                <SidebarHomeUser
+                                <UserSideBar
                                     avatar={info.avatar}
                                     name={info.name}
                                     job={info.job}

@@ -1,6 +1,6 @@
 const sidebarInfo = [
     {
-        id: 1,
+        id: 0,
         avatar: "https://static.vecteezy.com/ti/vetor-gratis/p2/2002247-icone-de-avatar-de-mulher-negra-bonita-grátis-vetor.jpg",
         name: "Maria",
         job: "Auxiliar administrativo",

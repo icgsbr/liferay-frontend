@@ -7,7 +7,7 @@ import TitleInfoGlobal from "./TitleInfoGlobal";
 import institutionInfo from "../../institution-info";
 import InstitutionCard from "./InstitutionCard";
 import sidebarInfo from "../../sidebar-info";
-import SidebarHomeUser from "./HomeUserSideBar";
+import UserSideBar from "./UserSideBar";
 import Footer from "../../Components/layout/Footer";
 
 function Institution() {
@@ -61,19 +61,21 @@ function Institution() {
                         </div>
                     </div>
                     <div className="col-md-2 sidebar-right-institution">
-                        {sidebarInfo.map((info) =>
-                            <SidebarHomeUser
-                                avatar={info.avatar}
-                                name={info.name}
-                                job={info.job}
-                                titleEvpYear={info.titleEvpYear +" "+ mdate.getFullYear()}
-                                titleDonate={info.titleDonate}
-                                donateValue={info.donateValue}
-                                donateMax={info.donateMax}
-                                activityValue={info.activityValue}
-                                activityMax={info.activityMax}
-                            />
-                        )}
+                        <div className="sidebar-institution-container">
+                            {sidebarInfo.map((info) =>
+                                <UserSideBar
+                                    avatar={info.avatar}
+                                    name={info.name}
+                                    job={info.job}
+                                    titleEvpYear={info.titleEvpYear +" "+ mdate.getFullYear()}
+                                    titleDonate={info.titleDonate}
+                                    donateValue={info.donateValue}
+                                    donateMax={info.donateMax}
+                                    activityValue={info.activityValue}
+                                    activityMax={info.activityMax}
+                                />
+                            )}
+                        </div>
                     </div>
                 </div>
             </div>

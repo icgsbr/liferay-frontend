@@ -8,7 +8,7 @@ import TitleInfoGlobal from "./TitleInfoGlobal";
 import registerActivityInfo from "./../../register-activity-info";
 import RegisterActivityCard from "./../User/RegisterActivityCard";
 import sidebarInfo from "../../sidebar-info";
-import SidebarHomeUser from "./HomeUserSideBar";
+import UserSideBar from "./UserSideBar";
 import Footer from "../../Components/layout/Footer";
 
 function RegisterActivity() {
@@ -45,7 +45,9 @@ function RegisterActivity() {
                                     img={info.img}
                                     name={info.name}
                                     phone={info.phone}
+                                    email={info.email}
                                     city={info.city}
+                                    street={info.street}
                                     activityValue={info.activityValue}
                                     activityText={info.activityText}
                                     activityDate={info.activityDate}
@@ -58,7 +60,7 @@ function RegisterActivity() {
                     <div className="col-md-2 sidebar-right-register-activity">
                         <div className="sidebar-activity-container">
                             {sidebarInfo.map((info) =>
-                                <SidebarHomeUser
+                                <UserSideBar
                                     avatar={info.avatar}
                                     name={info.name}
                                     job={info.job}
