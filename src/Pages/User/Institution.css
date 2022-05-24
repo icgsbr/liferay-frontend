@@ -5,7 +5,9 @@
     margin-top: 64px;
     margin-bottom: 64px;
 }
-
+.institution-card-container{
+    color:#0b63ce;
+}
 .overflow-scroll {
     height: 100vh;
     overflow-y: scroll;
@@ -46,15 +48,22 @@
     height: 36px;
     padding: 0 8px;
     background-color: #ffffff;
+    margin: 0 10px;
 }
 
 #select-filter-institution {
-    width: 200px;
-    margin: 0 16px;
+    width: 175px;
+    margin: 0 10px;
     border-radius: 36px;
     display: inline;
 }
 
 #btn-filter-institution {
     border-radius: 36px;
+    margin-left: 10px;
+}
+.btn-add-institution{
+    color: #0b63ce;
+    margin-left: 60%;
+    position:fixed;
 }

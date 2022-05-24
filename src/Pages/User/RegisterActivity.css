@@ -1,5 +1,6 @@
 .register-activity-container {
     position: relative;
+    color:#0b63ce;;
     top: 0;
     bottom: 0;
     margin-top: 64px;
@@ -26,11 +27,17 @@
     border-radius: 36px !important;
 }
 
-.signal-state-reg-activity {
+.signal-state-reg-activity-and {
     width: 24px;
     height: 24px;
     border-radius: 100%;
     background-color: #ffa500;
+}
+.signal-state-reg-activity-con {
+    width: 24px;
+    height: 24px;
+    border-radius: 100%;
+    background-color: #0b63ce;
 }
 
 .card-body-activity {

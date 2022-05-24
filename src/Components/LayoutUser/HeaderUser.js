@@ -3,7 +3,7 @@ import {NavLink} from "react-router-dom";
 
 import "./HeaderUser.css";
 import logo from "./../../images/ic_liferay_white.png";
-import PopupMenuForm from "../../Pages/User/PopupMenuForm";
+import PopupMenuForm from "../PopupMenuUser/PopupMenuForm";
 
 function HeaderUser() {
     const [isShowing, setShowing] = useState(false);
