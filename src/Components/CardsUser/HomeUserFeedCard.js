@@ -4,7 +4,6 @@ function HomeUserFeedCard(props) {
     const handlerDetailFeedCard = () => {
         alert('Click OK!');
     }
-
     return(
         <div className="card mb-3">
             <div className="row g-0" onClick={() => {handlerDetailFeedCard()}}>

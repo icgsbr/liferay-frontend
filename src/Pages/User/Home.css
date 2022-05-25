@@ -5,10 +5,10 @@
     margin-top: 64px;
     margin-bottom: 64px;
 }
-
 .overflow-scroll {
     height: 100vh;
     overflow-y: scroll;
+    padding-bottom: 3%;
 }
 
 .sidebar-right-home {
