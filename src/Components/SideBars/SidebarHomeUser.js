@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./UserSideBar.css";
+import "./SidebarHomeUser.css";
 
 function HomeUserSideBar(props) {
     const donateValue = "R$ " + props.donateValue + ".00" + " / " + props.donateMax;

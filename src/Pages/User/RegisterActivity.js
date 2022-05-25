@@ -3,21 +3,12 @@ import { NavLink } from "react-router-dom";
 
 import "./RegisterActivity.css";
 import HeaderUser from "../../Components/LayoutUser/HeaderUser";
-<<<<<<< HEAD
-import titleGlobalInfo from "../../title-info-global";
-import TitleInfoGlobal from "./TitleInfoGlobal";
-import registerActivityInfo from "./../../register-activity-info";
-import RegisterActivityCard from "./../User/RegisterActivityCard";
-import sidebarInfo from "../../sidebar-info";
-import UserSideBar from "./UserSideBar";
-=======
 import titleGlobalInfo from "../../Infos/title-info-global";
 import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
 import registerActivityInfo from "../../Infos/register-activity-info";
 import RegisterActivityCard from "../../Components/CardsUser/RegisterActivityCard";
 import sidebarInfo from "../../Infos/sidebar-info";
-import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
->>>>>>> a82ee0850f455b43830297467e96ced214358c3c
+import SidebarHomeUser from "../../Components/SideBars/SidebarHomeUser";
 import Footer from "../../Components/layout/Footer";
 
 function RegisterActivity() {
@@ -70,7 +61,7 @@ function RegisterActivity() {
                     <div className="col-md-2 sidebar-right-register-activity">
                         <div className="sidebar-activity-container">
                             {sidebarInfo.map((info) =>
-                                <UserSideBar
+                                <SidebarHomeUser
                                     avatar={info.avatar}
                                     name={info.name}
                                     job={info.job}

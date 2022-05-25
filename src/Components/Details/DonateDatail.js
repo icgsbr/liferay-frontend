@@ -2,13 +2,13 @@ import React, { useContext } from "react";
 
 import "./DonateDetail.css";
 
-import HeaderUser from "../../Components/LayoutUser/HeaderUser";
-import homeUserFeedContent from "../../home-user-feed-info";
+import HeaderUser from "../LayoutUser/HeaderUser";
+import homeUserFeedContent from "../../Infos/home-user-feed-info";
 import DonateDetailCard from "./DonateDetailCard";
 import { DonateContext } from "./DonateDetailContext";
-import sidebarInfo from "../../sidebar-info";
-import UserSideBar from "./UserSideBar";
-import Footer from "../../Components/layout/Footer";
+import sidebarInfo from "../../Infos/sidebar-info";
+import UserSideBar from "../SideBars/SidebarHomeUser";
+import Footer from "../layout/Footer";
 
 function DonateDetail() {
     const mdate = new Date();

@@ -29,15 +29,9 @@ function RegisterActivityCard(props) {
                     </div>
                 </div>
                 <div className="col-md-2">
-<<<<<<< HEAD:src/Pages/User/RegisterActivityCard.js
-                    <div className="card-body card-body-register-activity">
-                        <div className="signal-state-register-activity"></div>
-                        <span className="card-text text-card-register-activity">{props.activityTitle}</span>
-=======
                     <div className="card-body card-body-activity">
                         <div className={StateColor()}></div>
                         <span className="card-text text-card-activity">{props.activityTitle}</span>
->>>>>>> a82ee0850f455b43830297467e96ced214358c3c:src/Components/CardsUser/RegisterActivityCard.js
                     </div>
                 </div>
             </div>

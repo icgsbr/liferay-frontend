@@ -2,21 +2,12 @@ import React from "react";
 
 import "./Institution.css";
 import HeaderUser from "../../Components/LayoutUser/HeaderUser";
-<<<<<<< HEAD
-import titleGlobalInfo from "../../title-info-global";
-import TitleInfoGlobal from "./TitleInfoGlobal";
-import institutionInfo from "../../institution-info";
-import InstitutionCard from "./InstitutionCard";
-import sidebarInfo from "../../sidebar-info";
-import UserSideBar from "./UserSideBar";
-=======
 import titleGlobalInfo from "../../Infos/title-info-global";
 import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
 import institutionInfo from "../../Infos/institution-info";
 import InstitutionCard from "../../Components/CardsUser/InstitutionCard";
 import sidebarInfo from "../../Infos/sidebar-info";
-import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
->>>>>>> a82ee0850f455b43830297467e96ced214358c3c
+import SidebarHomeUser from "../../Components/SideBars/SidebarHomeUser";
 import Footer from "../../Components/layout/Footer";
 import {Link} from "react-router-dom";
 
@@ -81,23 +72,6 @@ function Institution() {
                         </div>
                     </div>
                     <div className="col-md-2 sidebar-right-institution">
-<<<<<<< HEAD
-                        <div className="sidebar-institution-container">
-                            {sidebarInfo.map((info) =>
-                                <UserSideBar
-                                    avatar={info.avatar}
-                                    name={info.name}
-                                    job={info.job}
-                                    titleEvpYear={info.titleEvpYear +" "+ mdate.getFullYear()}
-                                    titleDonate={info.titleDonate}
-                                    donateValue={info.donateValue}
-                                    donateMax={info.donateMax}
-                                    activityValue={info.activityValue}
-                                    activityMax={info.activityMax}
-                                />
-                            )}
-                        </div>
-=======
                         {sidebarInfo.map((info) =>
                             <SidebarHomeUser
                                 avatar={info.avatar}
@@ -112,7 +86,6 @@ function Institution() {
                                 activityMax={info.activityMax}
                             />
                         )}
->>>>>>> a82ee0850f455b43830297467e96ced214358c3c
                     </div>
                 </div>
             </div>

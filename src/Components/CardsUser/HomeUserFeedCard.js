@@ -2,7 +2,7 @@ import React, { useCallback, useContext } from "react";
 import { useNavigate } from "react-router-dom";
 
 import "./HomeUserFeedCard.css";
-import { DonateContext } from "./DonateDetailContext";
+import { DonateContext } from "../Details/DonateDetailContext"
 
 function HomeUserFeedCard(props) {
     const { value, setValue } = useContext(DonateContext);
