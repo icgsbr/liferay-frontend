@@ -4,7 +4,7 @@ import "./HomeRH.css";
 import HeaderUser from "../../Components/LayoutUser/HeaderUser";
 import homeUserFeedInfo from "../../Infos/home-user-feed-info";
 import HomeUserFeedCard from "../../Components/CardsUser/HomeUserFeedCard";
-import sidebarInfo from "../../Infos/sidebar-info";
+import sidebarInfo from "../../Infos/sidebarRH-info";
 import SidebarHomeRH from "../../Components/SideBars/HomeRHSideBar";
 import Footer from "../../Components/layout/Footer";
 

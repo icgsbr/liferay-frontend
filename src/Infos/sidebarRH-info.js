@@ -1,7 +1,8 @@
+import avatar from "../images/AvatarRH.jpg";
 const sidebarRHInfo = [
     {
         id: 1,
-        avatar: "../images/Fresh Folk Avatar.jpg",
+        avatar: avatar,
         name: "Lucas Andrade",
         job: "RH",
         titleEvpYear: "EVP",
