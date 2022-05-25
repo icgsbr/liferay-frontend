@@ -2,12 +2,21 @@ import React from "react";
 
 import "./Home.css";
 import HeaderUser from "./../../Components/LayoutUser/HeaderUser";
+<<<<<<< HEAD
 import titleGlobalInfo from "./../../title-info-global";
 import TitleInfoGlobal from "./TitleInfoGlobal";
 import homeUserFeedInfo from "./../../home-user-feed-info";
 import HomeUserFeedCard from "./../User/HomeUserFeedCard";
 import sidebarInfo from "./../../sidebar-info";
 import UserSideBar from "./UserSideBar";
+=======
+import titleGlobalInfo from "../../Infos/title-info-global";
+import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
+import homeUserFeedInfo from "../../Infos/home-user-feed-info";
+import HomeUserFeedCard from "../../Components/CardsUser/HomeUserFeedCard";
+import sidebarInfo from "../../Infos/sidebar-info";
+import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
+>>>>>>> a82ee0850f455b43830297467e96ced214358c3c
 import Footer from "./../../Components/layout/Footer";
 
 function Home() {
@@ -24,7 +33,7 @@ function Home() {
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
-                                    titleevpmain="DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"
+                                    titleevpmain={"DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"}
                                     titledonateglobal={info.titledonateglobal}
                                     titledonatevalor={info.titledonatevalor}
                                     donatevalue={info.donatevalue}
@@ -67,6 +76,7 @@ function Home() {
                                     titleDonate={info.titleDonate}
                                     donateValue={info.donateValue}
                                     donateMax={info.donateMax}
+                                    titleActivity = {info.titleActivity}
                                     activityValue={info.activityValue}
                                     activityMax={info.activityMax}
                                 />

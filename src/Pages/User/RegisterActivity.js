@@ -3,17 +3,27 @@ import { NavLink } from "react-router-dom";
 
 import "./RegisterActivity.css";
 import HeaderUser from "../../Components/LayoutUser/HeaderUser";
+<<<<<<< HEAD
 import titleGlobalInfo from "../../title-info-global";
 import TitleInfoGlobal from "./TitleInfoGlobal";
 import registerActivityInfo from "./../../register-activity-info";
 import RegisterActivityCard from "./../User/RegisterActivityCard";
 import sidebarInfo from "../../sidebar-info";
 import UserSideBar from "./UserSideBar";
+=======
+import titleGlobalInfo from "../../Infos/title-info-global";
+import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
+import registerActivityInfo from "../../Infos/register-activity-info";
+import RegisterActivityCard from "../../Components/CardsUser/RegisterActivityCard";
+import sidebarInfo from "../../Infos/sidebar-info";
+import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
+>>>>>>> a82ee0850f455b43830297467e96ced214358c3c
 import Footer from "../../Components/layout/Footer";
 
 function RegisterActivity() {
     const mdate = new Date();
 
+  
     return(
         <div className="register-activity-container overflow-scroll">
             <HeaderUser/>
@@ -68,6 +78,7 @@ function RegisterActivity() {
                                     titleDonate={info.titleDonate}
                                     donateValue={info.donateValue}
                                     donateMax={info.donateMax}
+                                    titleActivity = {info.titleActivity}
                                     activityValue={info.activityValue}
                                     activityMax={info.activityMax}
                                 />
@@ -82,6 +93,7 @@ function RegisterActivity() {
             <Footer/>
         </div>
     );
+
 }
 
 export default RegisterActivity;

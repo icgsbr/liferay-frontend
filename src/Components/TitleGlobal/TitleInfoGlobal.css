@@ -1,5 +1,6 @@
 .title-global-style {
     color: #0b63ce;
+    display: block;
 }
 
 .info-global-container {
@@ -8,6 +9,10 @@
     border-radius: 0 50px 50px 0;
     background-color: #0b63ce;
     margin-bottom: 16px;
+}
+.title-global-style-year{
+    position: relative;
+    font-size: 12px ;
 }
 
 .info-global-style {
