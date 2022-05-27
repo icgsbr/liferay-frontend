@@ -18,9 +18,7 @@ function Home() {
             <HeaderUser/>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-2 sidebar-left-home">
-                    </div>
-                    <div className="col-md-8 center-container-home">
+                    <div className="col-md-10 center-container-home">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal

@@ -16,9 +16,7 @@ function HomeRH() {
             <HeaderRH/>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-2 sidebar-left-home">
-                    </div>
-                    <div className="col-md-8 center-container-home">
+                    <div className="col-md-10 center-container-home">
                             <TitleInfoGlobalRH titleevpmain={"DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"}/>
                         <div className="feed-home-container">
                             {homeUserFeedInfo.map((info) =>

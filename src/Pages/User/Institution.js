@@ -19,9 +19,7 @@ function Institution() {
             <HeaderUser/>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-2 sidebar-left-institution">
-                    </div>
-                    <div className="col-md-8 center-institution">
+                    <div className="col-md-10 center-institution">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal

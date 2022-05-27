@@ -20,9 +20,7 @@ function RegisterActivity() {
             <HeaderUser/>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-2 sidebar-left-register-activity">
-                    </div>
-                    <div className="col-md-8 center-register-activity">
+                    <div className="col-md-10 center-register-activity">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
