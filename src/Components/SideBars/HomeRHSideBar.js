@@ -16,7 +16,7 @@ function HomeRHSideBar(props) {
                 <div className="progress-element-donate">
                     <p>{props.titleDonate}</p>
                     <div className="progress-container">
-                        <progress max="300" value={props.donateValue}>{props.donateValue}</progress>
+                        <progress max="3500" value={props.donateValue}>{props.donateValue}</progress>
                     </div>
                     <p className="progress-label">{donateValue}</p>
                 </div>
@@ -24,7 +24,7 @@ function HomeRHSideBar(props) {
                 <div className="progress-element-activity">
                     <p>{props.titleActivity}</p>
                     <div className="progress-container">
-                        <progress max="15" value={props.activityValue}>{props.activityValue}</progress>
+                        <progress max="450" value={props.activityValue}>{props.activityValue}</progress>
                     </div>
                     <p className="progress-label">{activityValue}</p>
                 </div>

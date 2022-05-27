@@ -41,11 +41,10 @@ function Institution() {
                         </div>
                         <div className="filter-institution-container">
                             <input type="search" id="search-institution" placeholder="Search" name="search"/>
-                            <span>Ordenar</span>
-                            <select className="form-select" id="select-filter-institution" name="selectFilterInstitution">
-                                <option value="1" selected >Recomendações</option>
+                            <span>ordenar</span>
+                            <select className="form-select" id="select-order-institution" name="selectFilterInstitution">
+                                <option value="1" selected >Menos solicitações</option>
                                 <option value="2">Mais solicitações</option>
-                                
                             </select>
                             <span>filtro</span>
                             <button className="btn btn-primary" id="btn-filter-institution">Minhas Instituições</button>

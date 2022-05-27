@@ -7,6 +7,7 @@ import RegisterActivity from "./Pages/User/RegisterActivity";
 import Institution from "./Pages/User/Institution";
 import AddInstitution from "./Pages/User/AddInstitution"
 import InstitutionSelect from "./Pages/User/InstitutionSelect"
+import Forms from "./Pages/User/Forms"
 import HomeRH from "./Pages/RH/HomeRH"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -19,11 +20,12 @@ function App() {
                     <Routes>
                         <Route path="/" element={<Login/>}/>
                         <Route path="/home" element={<Home/>}/>
-                        <Route path="/homeRH" element={<HomeRH/>}/>
+                        <Route path="/admin" element={<HomeRH/>}/>
+                        <Route path="/form" element={<Forms/>}/>
                         <Route path="/registeractivity" element={<RegisterActivity/>}/>
                         <Route path="/institution" element={<Institution/>}/>
                         <Route path="/addInstituition" element={<AddInstitution/>}/>
-                        <Route path="/InstitutionSelect" element={<InstitutionSelect/>}/>
+                        <Route path="/institutionSelect" element={<InstitutionSelect/>}/>
                     </Routes>
                 </BrowserRouter>
             </Suspense>

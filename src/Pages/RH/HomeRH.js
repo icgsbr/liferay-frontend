@@ -1,7 +1,8 @@
 import React from "react";
 
 import "./HomeRH.css";
-import HeaderUser from "../../Components/LayoutUser/HeaderUser";
+import HeaderRH from "../../Components/LayoutRH/HeaderRH";
+import TitleInfoGlobalRH from "../../Components/TitleGlobal/TitleInfoGlobalRH";
 import homeUserFeedInfo from "../../Infos/home-user-feed-info";
 import HomeUserFeedCard from "../../Components/CardsUser/HomeUserFeedCard";
 import sidebarInfo from "../../Infos/sidebarRH-info";
@@ -9,17 +10,16 @@ import SidebarHomeRH from "../../Components/SideBars/HomeRHSideBar";
 import Footer from "../../Components/layout/Footer";
 
 function HomeRH() {
-    const mdate = new Date();
-
+    var mdate = new Date();
     return(
         <div className="home-user-container overflow-scroll">
-            <HeaderUser/>
+            <HeaderRH/>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-2 sidebar-left-home">
                     </div>
                     <div className="col-md-8 center-container-home">
-                       
+                            <TitleInfoGlobalRH titleevpmain={"DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"}/>
                         <div className="feed-home-container">
                             {homeUserFeedInfo.map((info) =>
                                 <HomeUserFeedCard
