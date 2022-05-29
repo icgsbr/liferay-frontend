@@ -1,16 +1,14 @@
-.title-global-style {
+
+.titleRH-global-style{
     color: #0b63ce;
+    padding: 10px;
+    border-radius: 0 50px 50px 0;
+    margin: 16px 0;
     display: block;
-    margin:16px;
+    max-width: 80%;
+    background-color:rgba(11,99,206,0.17);
 }
 
-.info-global-container {
-    color: #ffffff;
-    padding: 16px;
-    border-radius: 0 50px 50px 0;
-    background-color: #0b63ce;
-    margin: 16px 0;
-}
 .title-global-style-year{
     position: relative;
     font-size: 12px ;
