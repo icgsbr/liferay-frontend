@@ -4,7 +4,6 @@
     bottom: 0;
     margin: 64px 0 64px 3% ;
 }
-
 .overflow-scroll {
     height: 100vh;
     overflow-y: scroll;

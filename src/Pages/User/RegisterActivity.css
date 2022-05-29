@@ -3,8 +3,7 @@
     color:#0b63ce;;
     top: 0;
     bottom: 0;
-    margin-top: 64px;
-    margin-bottom: 64px;
+    margin: 64px 0 64px 3% ;
 }
 
 .sidebar-activity-container {
@@ -22,7 +21,7 @@
 
 .button-new-activity-container {
     width: 100%;
-    margin-top: 36px;
+    margin: 36px 0;
     text-align: center;
 }
 

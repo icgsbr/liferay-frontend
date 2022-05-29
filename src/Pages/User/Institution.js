@@ -7,7 +7,7 @@ import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
 import institutionInfo from "../../Infos/institution-info";
 import InstitutionCard from "../../Components/CardsUser/InstitutionCard";
 import sidebarInfo from "../../Infos/sidebar-info";
-import SidebarHomeUser from "../../Components/SideBars/SidebarHomeUser";
+import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
 import Footer from "../../Components/layout/Footer";
 import {Link} from "react-router-dom";
 
@@ -19,9 +19,8 @@ function Institution() {
             <HeaderUser/>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-2 sidebar-left-institution">
-                    </div>
-                    <div className="col-md-8 center-institution">
+     
+                    <div className="col-md-10 center-institution">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
@@ -53,6 +52,7 @@ function Institution() {
                         <div className="institution-card-container">
                             {institutionInfo.map((info) =>
                                 <InstitutionCard
+                                    id={info.id}
                                     img={info.img}
                                     name={info.name}
                                     phone={info.phone}

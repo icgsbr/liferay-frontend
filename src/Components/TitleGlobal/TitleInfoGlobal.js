@@ -3,7 +3,8 @@ import React from "react";
 import "./TitleInfoGlobal.css";
 
 function TitleInfoGlobal(props) {
-    const mdate = new Date();
+    var mdate = new Date();
+
     return(
         <div className="title-global-container">
             <div className="col title-global-style">

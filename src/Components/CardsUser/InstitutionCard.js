@@ -1,15 +1,19 @@
-import React from "react";
-
-import "./InstitutionCard.css";
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { ModelContext } from "../ModelContext";
 
 function InstitutionCard(props) {
-    const handlerStateCard = () => {
-        alert('Click OK!');
+    const {context, setContext} = useContext(ModelContext);
+    const directDetail = useNavigate();
+
+    const handlerInstituteDetail = () => {
+        setContext(props.id);
+        directDetail("/institutiondetail");
     }
 
     return(
         <div className="card mb-3">
-            <div className="row g-0" onClick={() => {handlerStateCard()}}>
+            <div className="row g-0" onClick={() => {handlerInstituteDetail()}}>
                 <div className="col-md-2">
                     <img className="img-fluid rounded-start" src={props.img} alt="image card"/>
                 </div>

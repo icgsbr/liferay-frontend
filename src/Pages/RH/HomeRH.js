@@ -1,45 +1,26 @@
 import React from "react";
 
-import "./Home.css";
-import HeaderUser from "./../../Components/LayoutUser/HeaderUser";
-import titleGlobalInfo from "../../Infos/title-info-global";
-import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
+import "./HomeRH.css";
+import HeaderRH from "../../Components/LayoutRH/HeaderRH";
+import TitleInfoGlobalRH from "../../Components/TitleGlobal/TitleInfoGlobalRH";
 import homeUserFeedInfo from "../../Infos/home-user-feed-info";
 import HomeUserFeedCard from "../../Components/CardsUser/HomeUserFeedCard";
-import sidebarInfo from "../../Infos/sidebar-info";
-import SidebarHomeUser from "../../Components/SideBars/SidebarHomeUser";
-import Footer from "./../../Components/layout/Footer";
+import sidebarInfo from "../../Infos/sidebarRH-info";
+import SidebarHomeRH from "../../Components/SideBars/HomeRHSideBar";
+import Footer from "../../Components/layout/Footer";
 
-function Home() {
-    const mdate = new Date();
-
+function HomeRH() {
+    var mdate = new Date();
     return(
         <div className="home-user-container overflow-scroll">
-            <HeaderUser/>
+            <HeaderRH/>
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-10 center-container-home">
-                        <div className="title-global-info-container">
-                            {titleGlobalInfo.map((info) =>
-                                <TitleInfoGlobal
-                                    titleevpmain={"DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"}
-                                    titledonateglobal={info.titledonateglobal}
-                                    titledonatevalor={info.titledonatevalor}
-                                    donatevalue={info.donatevalue}
-                                    titledonatemeta={info.titledonatemeta}
-                                    donatemeta={info.donatemeta}
-                                    titleactivityglobal={info.titleactivityglobal}
-                                    titleactivityvalor={info.titleactivityvalor}
-                                    activityvalue={info.activityvalue}
-                                    titleactivitymeta={info.titleactivitymeta}
-                                    activitymeta={info.activitymeta}
-                                />
-                            )}
-                        </div>
+                            <TitleInfoGlobalRH titleevpmain={"DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"}/>
                         <div className="feed-home-container">
                             {homeUserFeedInfo.map((info) =>
                                 <HomeUserFeedCard
-                                    id={info.id}
                                     img={info.img}
                                     avatar={info.avatar}
                                     username={info.username}
@@ -54,7 +35,7 @@ function Home() {
                     <div className="col-md-2 sidebar-right-home">
                         <div className="sidebar-home-container">
                             {sidebarInfo.map((info) =>
-                                <SidebarHomeUser
+                                <SidebarHomeRH
                                     avatar={info.avatar}
                                     name={info.name}
                                     job={info.job}
@@ -76,4 +57,4 @@ function Home() {
     );
 }
 
-export default Home;
+export default HomeRH;
