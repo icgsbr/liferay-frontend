@@ -1,0 +1,19 @@
+.header-user-container {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+}
+
+nav.bg-light {
+    background-color: #0b63ce !important;
+}
+
+li.nav-item, a.nav-link {
+    color: #ffffff !important;
+}
+
+#icon-liferay-header-use {
+    width: 96px;
+    height: 24px;
+}
