@@ -1,0 +1,19 @@
+.donate-detail-container {
+    position: relative;
+    margin-top: 64px;
+    margin-bottom: 64px;
+}
+
+.overflow-scroll {
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.sidebar-right-donate-detail {
+    position: relative;
+    height: 100vh !important;
+}
+
+.sidebar-donate-detail-container {
+    text-align: center;
+}

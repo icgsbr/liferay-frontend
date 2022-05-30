@@ -7,7 +7,7 @@ import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
 import homeUserFeedInfo from "../../Infos/home-user-feed-info";
 import HomeUserFeedCard from "../../Components/CardsUser/HomeUserFeedCard";
 import sidebarInfo from "../../Infos/sidebar-info";
-import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
+import SidebarHomeUser from "../../Components/SideBars/SidebarHomeUser";
 import Footer from "./../../Components/layout/Footer";
 
 function Home() {
@@ -39,6 +39,7 @@ function Home() {
                         <div className="feed-home-container">
                             {homeUserFeedInfo.map((info) =>
                                 <HomeUserFeedCard
+                                    id={info.id}
                                     img={info.img}
                                     avatar={info.avatar}
                                     username={info.username}

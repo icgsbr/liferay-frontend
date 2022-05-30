@@ -1,8 +1,14 @@
-import React from "react";
+import React, { useContext } from "react";
+import {useNavigate} from "react-router-dom";
+import { ModelContext } from "../ModelContext";
 
 function HomeUserFeedCard(props) {
+    const {context, setContext} = useContext(ModelContext);
+    const directDetail = useNavigate();
+
     const handlerDetailFeedCard = () => {
-        alert('Click OK!');
+        setContext(props.id);
+        directDetail("/homedetail");
     }
     return(
         <div className="card mb-3">

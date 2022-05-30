@@ -1,13 +1,19 @@
-import React from "react";
+import React, { useContext } from "react";
+import { useNavigate } from "react-router-dom";
+import { ModelContext } from "../ModelContext";
 
 function RegisterActivityCard(props) {
-    const handlerStateCard = () => {
-        alert('Click OK!');
+    const {context, setContext} = useContext(ModelContext);
+    const directDetail = useNavigate();
+
+    const handlerRegisterDetail = () => {
+        setContext(props.id);
+        directDetail("/registeractivitydetail");
     }
 
     return(
         <div className="card mb-3">
-            <div className="row g-0" onClick={() => {handlerStateCard()}}>
+            <div className="row g-0" onClick={() => {handlerRegisterDetail()}}>
                 <div className="col-md-2">
                     <img className="img-fluid rounded-start" src={props.img} alt="image card"/>
                 </div>
@@ -34,7 +40,8 @@ function RegisterActivityCard(props) {
             </div>
         </div>
     );
-    function StateColor(){
+
+    function StateColor() {
         let stateClass = "signal-state-reg-activity-"
         return stateClass += (props.activityTitle == "Concluida") ? "con":"and"
     }

@@ -1,6 +1,6 @@
 const institutionInfo = [
     {
-        id: 1,
+        id: 0,
         img: "https://s.concursosnobrasil.com.br/media/cache/f/imip-dsei-al-se_CrkewcF-1200x675.jpg",
         name: "IMIP",
         phone: "(81) 2122-4100",
@@ -12,7 +12,7 @@ const institutionInfo = [
         donateds: 6,
     },
     {
-        id: 2,
+        id: 1,
         img: "https://odefensor.com.br/site/wp-content/uploads/2021/10/Fluxo-Digno-arrecada-mais-de-mil-absorventes-scaled.jpg",
         name: "Solidariza Recife",
         phone: "(81) 2354-8579",

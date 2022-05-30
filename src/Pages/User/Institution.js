@@ -19,6 +19,7 @@ function Institution() {
             <HeaderUser/>
             <div className="container-fluid">
                 <div className="row">
+     
                     <div className="col-md-10 center-institution">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
@@ -50,6 +51,7 @@ function Institution() {
                         <div className="institution-card-container">
                             {institutionInfo.map((info) =>
                                 <InstitutionCard
+                                    id={info.id}
                                     img={info.img}
                                     name={info.name}
                                     phone={info.phone}

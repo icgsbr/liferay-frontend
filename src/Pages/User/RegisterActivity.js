@@ -41,6 +41,7 @@ function RegisterActivity() {
                         <div className="feed-activity-container">
                             {registerActivityInfo.map((info) =>
                                 <RegisterActivityCard
+                                    id={info.id}
                                     img={info.img}
                                     name={info.name}
                                     phone={info.phone}
