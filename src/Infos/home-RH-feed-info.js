@@ -1,4 +1,4 @@
-const homeUserFeedContent = [
+const homeRHFeedContent = [
     {
         id: 0,
         img: "https://s.concursosnobrasil.com.br/media/cache/f/imip-dsei-al-se_CrkewcF-1200x675.jpg",
@@ -17,7 +17,6 @@ const homeUserFeedContent = [
         descriptionInst:null,
         url:"http://www1.imip.org.br/imip/home/index.html",
         CEP: "50070-902",
-        typeSolicitation:"doação",
         valor:"R$ "+ 60.00,
         atividade:null,
         optionConcession:"Propostas",
@@ -39,4 +38,4 @@ const homeUserFeedContent = [
     }
 ];
 
-export default homeUserFeedContent;
+export default homeRHFeedContent;

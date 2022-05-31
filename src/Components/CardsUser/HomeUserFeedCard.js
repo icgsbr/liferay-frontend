@@ -8,7 +8,12 @@ function HomeUserFeedCard(props) {
 
     const handlerDetailFeedCard = () => {
         setContext(props.id);
-        directDetail("/homedetail");
+        let url = window.location.href;
+        let pag = url.split("/").pop();
+        if (pag =="admin")
+            directDetail("/solicitations");
+        else
+            directDetail("/HomeDetail");
     }
     return(
         <div className="card mb-3">

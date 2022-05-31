@@ -1,15 +1,15 @@
 import React from "react";
 
-import "./HomeRH.css";
+import "./registryForm.css";
 import HeaderRH from "../../Components/LayoutRH/HeaderRH";
 import TitleInfoGlobalRH from "../../Components/TitleGlobal/TitleInfoGlobalRH";
-import homeRHFeedInfo from "../../Infos/home-RH-feed-info";
-import HomeUserFeedCard from "../../Components/CardsUser/HomeUserFeedCard";
 import sidebarInfo from "../../Infos/sidebarRH-info";
 import SidebarHomeRH from "../../Components/SideBars/HomeRHSideBar";
 import Footer from "../../Components/layout/Footer";
+import Registry from "../../Components/registerform";
+import registryInfo from "../../Infos/home-user-feed-info"
 
-function HomeRH() {
+function RegistryForm() {
     var mdate = new Date();
     return(
         <div className="home-user-container overflow-scroll">
@@ -17,20 +17,16 @@ function HomeRH() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-10 center-container-home">
-                            <TitleInfoGlobalRH titleevpmain={"DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"}/>
-                        <div className="feed-home-container">
-                            {homeRHFeedInfo.map((info) =>
-                                <HomeUserFeedCard
-                                    img={info.img}
-                                    avatar={info.avatar}
-                                    username={info.username}
-                                    userjob={info.userjob}
-                                    nameinst={info.nameinst}
-                                    dateinst={info.dateinst}
-                                    localeinst={info.localeinst}
-                                />
-                            )}
-                        </div>
+                        <TitleInfoGlobalRH titleevpmain={"REGISTRO DO FORMULÁRIO"}/>
+                        {registryInfo.map((info)=>
+                             <Registry 
+                             username ={info.username}
+                             nameinst = {info.nameinst}
+                             optionConcession = {info.optionConcession}
+                             />
+                        )}    
+                       
+                                       
                     </div>
                     <div className="col-md-2 sidebar-right-home">
                         <div className="sidebar-home-container">
@@ -57,4 +53,4 @@ function HomeRH() {
     );
 }
 
-export default HomeRH;
+export default RegistryForm;

@@ -8,7 +8,7 @@ function HomeUserSideBar(props) {
 
     return(
         <div className="sidebar-main-container">
-            <div className="sidebar-container">
+            <div className="home-sidebar-container">
                 <img src={props.avatar} alt="avatar" className="user-avatar-sidebar"/><br/>
                 <span className="username-sidebar">{props.name}</span><br/>
                 <span className="user-job-sidebar">{props.job}</span>

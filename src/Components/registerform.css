@@ -1,0 +1,15 @@
+.col-sm-5{
+}
+#titleRegistry{
+    color: #0b63ce;
+    font-size: 17px; 
+}
+#title-typeSolicitation{
+    text-align: center;
+    color: #0b63ce;  
+}
+.registryData-text{
+    margin-top: 5%;
+    font-size: 13px;
+    color: #0b63ce;
+}
