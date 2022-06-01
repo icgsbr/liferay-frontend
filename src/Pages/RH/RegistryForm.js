@@ -1,16 +1,18 @@
-import React from "react";
-
-import "./registryForm.css";
+import React, { useContext } from "react";
+import "./RegistryForm.css";
 import HeaderRH from "../../Components/LayoutRH/HeaderRH";
+import {ModelContext} from "../../Components/ModelContext";
 import TitleInfoGlobalRH from "../../Components/TitleGlobal/TitleInfoGlobalRH";
 import sidebarInfo from "../../Infos/sidebarRH-info";
+import homeRHFeedInfo from "../../Infos/home-RH-feed-info";
 import SidebarHomeRH from "../../Components/SideBars/HomeRHSideBar";
+import RegistryFormCard from "../../Components/CardsUser/RegistryFormCard";
 import Footer from "../../Components/layout/Footer";
-import Registry from "../../Components/registerform";
-import registryInfo from "../../Infos/home-user-feed-info"
+
 
 function RegistryForm() {
     var mdate = new Date();
+    const {context,setContext} = useContext(ModelContext);
     return(
         <div className="home-user-container overflow-scroll">
             <HeaderRH/>
@@ -18,14 +20,18 @@ function RegistryForm() {
                 <div className="row">
                     <div className="col-md-10 center-container-home">
                         <TitleInfoGlobalRH titleevpmain={"REGISTRO DO FORMULÁRIO"}/>
-                        {registryInfo.map((info)=>
-                             <Registry 
-                             username ={info.username}
-                             nameinst = {info.nameinst}
-                             optionConcession = {info.optionConcession}
-                             />
-                        )}    
-                       
+                        <div>
+                            {
+                                <RegistryFormCard 
+                                    username = {homeRHFeedInfo[context].username}
+                                    usernameSec = {homeRHFeedInfo[context].usernameSec}
+                                    nameinst = {homeRHFeedInfo[context].nameinst}
+                                    optionConcession = {homeRHFeedInfo[context].optionConcession}
+
+                                />
+                            
+                            }
+                        </div>
                                        
                     </div>
                     <div className="col-md-2 sidebar-right-home">

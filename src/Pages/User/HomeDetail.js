@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import "./HomeDetail.css";
 import HeaderUser from "../../Components/LayoutUser/HeaderUser";
 import { ModelContext } from "../../Components/ModelContext";

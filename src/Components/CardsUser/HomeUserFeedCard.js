@@ -5,16 +5,13 @@ import { ModelContext } from "../ModelContext";
 function HomeUserFeedCard(props) {
     const {context, setContext} = useContext(ModelContext);
     const directDetail = useNavigate();
-
+    let url = window.location.href
+    let pag = url.split("/").pop() 
     const handlerDetailFeedCard = () => {
         setContext(props.id);
-        let url = window.location.href;
-        let pag = url.split("/").pop();
-        if (pag =="admin")
-            directDetail("/solicitations");
-        else
-            directDetail("/HomeDetail");
-    }
+        directDetail("/HomeDetail");
+    }      
+
     return(
         <div className="card mb-3">
             <div className="row g-0" onClick={() => {handlerDetailFeedCard()}}>

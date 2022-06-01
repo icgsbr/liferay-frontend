@@ -1,22 +1,24 @@
-import "./registerform.css"
+import "./registryFormCard.css";
 import React from "react";
+import {ModelContext} from "../../Components/ModelContext"
 
-function SolicitationRegistry(props){
+function RegistryFormCard(props){
     //select the kind of solicitation
     var type = props.optionConcession;
     const TypeSolicitation = () =>{
-        if (type == "Propostas")
+        if (type === "Propostas")
             return "Doação"
         else
             return "Atividade"
     }
     return(
-        <div key={props.id} className = "solicitation-register">
+        
+        <div className = "solicitation-register" >
             <div id="title-typeSolicitation" className="row"><h5>{TypeSolicitation() + " para a instituição " + props.nameinst}</h5></div>
             <div className="row">
                 <div className="col-sm-5">
                 <h5 id='titleRegistry'>Dados do Colaborador</h5>
-                <h6 className="registryData-text">Name:{props.username} {props.usernameSec}</h6>
+                <span className="registryData-text">Name:{props.username} + {props.usernameSec}</span>
                 </div>
                 <div className="col-sm-5">
                 </div>
@@ -28,5 +30,5 @@ function SolicitationRegistry(props){
     )
 }
 
-export default SolicitationRegistry;
+export default RegistryFormCard;
   
