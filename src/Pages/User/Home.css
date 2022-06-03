@@ -86,6 +86,7 @@ progress {
 
 .card-body-home {
     padding: 8px !important;
+    
 }
 
 .avatar-card-home {
@@ -98,6 +99,13 @@ progress {
     color:#0b63ce; 
     margin: 0 !important;
     padding: 0 !important;
+}
+.title-card-info{
+    font-size: 16px !important;
+    color:#0b63ce; 
+    margin: 0 !important;
+    padding: 0 !important;
+    text-align: center;
 }
 
 .text-card-home {

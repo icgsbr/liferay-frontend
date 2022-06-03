@@ -46,7 +46,10 @@ function Home() {
                                     userjob={info.userjob}
                                     nameinst={info.nameinst}
                                     dateinst={info.dateinst}
-                                    localeinst={info.localeinst}
+                                    cityinst={info.cityinst}
+                                    valor ={info.valor}
+                                    atividade ={info.atividade}
+                                    optionConcession = {info.optionConcession}
                                 />
                             )}
                         </div>

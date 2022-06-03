@@ -1,4 +1,7 @@
 .col-sm-5{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
 }
 #titleRegistry{
     color: #0b63ce;
@@ -12,4 +15,8 @@
     margin-top: 5%;
     font-size: 13px;
     color: #0b63ce;
+    display: flex ;
+    flex-direction: row;
 }
+
+

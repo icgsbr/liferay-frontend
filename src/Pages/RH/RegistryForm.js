@@ -13,6 +13,7 @@ import Footer from "../../Components/layout/Footer";
 function RegistryForm() {
     var mdate = new Date();
     const {context,setContext} = useContext(ModelContext);
+    
     return(
         <div className="home-user-container overflow-scroll">
             <HeaderRH/>
@@ -22,11 +23,31 @@ function RegistryForm() {
                         <TitleInfoGlobalRH titleevpmain={"REGISTRO DO FORMULÁRIO"}/>
                         <div>
                             {
-                                <RegistryFormCard 
+                                <RegistryFormCard
+                                    id = {homeRHFeedInfo[context].id} 
                                     username = {homeRHFeedInfo[context].username}
                                     usernameSec = {homeRHFeedInfo[context].usernameSec}
+                                    email = {homeRHFeedInfo[context].email} 
+                                    tel = {homeRHFeedInfo[context].tel} 
+                                    userjob = {homeRHFeedInfo[context].userjob} 
                                     nameinst = {homeRHFeedInfo[context].nameinst}
+                                    CNPJinst = {homeRHFeedInfo[context].CNPJinst}
+                                    addressinst = {homeRHFeedInfo[context].addressinst}
+                                    city = {homeRHFeedInfo[context].city}
+                                    region = {homeRHFeedInfo[context].region}
+                                    country = {homeRHFeedInfo[context].country}
+                                    dateinst = {homeRHFeedInfo[context].dateinst} 
+                                    localinst = {homeRHFeedInfo[context].localinst}
+                                    descriptionInst = {homeRHFeedInfo[context].descriptionInst}
+                                    url = {homeRHFeedInfo[context].url} 
+                                    cep = {homeRHFeedInfo[context].cep} 
+                                    valor = {homeRHFeedInfo[context].valor} 
+                                    atividade = {homeRHFeedInfo[context].atividade} 
                                     optionConcession = {homeRHFeedInfo[context].optionConcession}
+                                    objectives = {homeRHFeedInfo[context].objectives} 
+                                    objectivesOthers = {homeRHFeedInfo[context].objectivesOthers} 
+                                    groups = {homeRHFeedInfo[context].groups} 
+                                    groupOthers = {homeRHFeedInfo[context].groupOthers} 
 
                                 />
                             
