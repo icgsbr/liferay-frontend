@@ -5,9 +5,10 @@
     padding: 0 !important;
 }
 
-.card-body-home-user {
+.card-body-home {
     padding: 0 !important;
     text-align: center !important;
+    
 }
 
 .avatar-card-home-user {
@@ -31,10 +32,12 @@
     font-size: 16px !important;
     margin: 0 !important;
     padding: 0;
+    
 }
 
 .text-card-home-user {
     font-size: 12px !important;
     margin: 0 !important;
     padding: 0;
+    
 }

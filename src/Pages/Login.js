@@ -2,8 +2,8 @@ import React from "react";
 import Form from "react-bootstrap/Form";
 import {NavLink, Link} from "react-router-dom";
 
-import Navbar from "./HeaderLogin";
-import Footer from "./Footer";
+import Navbar from "../Components/layout/HeaderLogin";
+import Footer from "../Components/layout/Footer";
 import "./Login.css";
 
 function Login() {

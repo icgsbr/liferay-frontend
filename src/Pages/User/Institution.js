@@ -2,21 +2,12 @@ import React from "react";
 
 import "./Institution.css";
 import HeaderUser from "../../Components/LayoutUser/HeaderUser";
-<<<<<<< HEAD
-import titleGlobalInfo from "../../title-info-global";
-import TitleInfoGlobal from "./TitleInfoGlobal";
-import institutionInfo from "../../institution-info";
-import InstitutionCard from "./InstitutionCard";
-import sidebarInfo from "../../sidebar-info";
-import UserSideBar from "./UserSideBar";
-=======
 import titleGlobalInfo from "../../Infos/title-info-global";
 import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
 import institutionInfo from "../../Infos/institution-info";
 import InstitutionCard from "../../Components/CardsUser/InstitutionCard";
 import sidebarInfo from "../../Infos/sidebar-info";
 import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
->>>>>>> a82ee0850f455b43830297467e96ced214358c3c
 import Footer from "../../Components/layout/Footer";
 import {Link} from "react-router-dom";
 
@@ -28,9 +19,8 @@ function Institution() {
             <HeaderUser/>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-2 sidebar-left-institution">
-                    </div>
-                    <div className="col-md-8 center-institution">
+     
+                    <div className="col-md-10 center-institution order-1 order-md-0">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
@@ -50,11 +40,10 @@ function Institution() {
                         </div>
                         <div className="filter-institution-container">
                             <input type="search" id="search-institution" placeholder="Search" name="search"/>
-                            <span>Ordenar</span>
-                            <select className="form-select" id="select-filter-institution" name="selectFilterInstitution">
-                                <option value="1" selected >Recomendações</option>
+                            <span>ordenar</span>
+                            <select className="form-select" id="select-order-institution" name="selectFilterInstitution">
+                                <option value="1" selected >Menos solicitações</option>
                                 <option value="2">Mais solicitações</option>
-                                
                             </select>
                             <span>filtro</span>
                             <button className="btn btn-primary" id="btn-filter-institution">Minhas Instituições</button>
@@ -62,6 +51,7 @@ function Institution() {
                         <div className="institution-card-container">
                             {institutionInfo.map((info) =>
                                 <InstitutionCard
+                                    id={info.id}
                                     img={info.img}
                                     name={info.name}
                                     phone={info.phone}
@@ -81,23 +71,6 @@ function Institution() {
                         </div>
                     </div>
                     <div className="col-md-2 sidebar-right-institution">
-<<<<<<< HEAD
-                        <div className="sidebar-institution-container">
-                            {sidebarInfo.map((info) =>
-                                <UserSideBar
-                                    avatar={info.avatar}
-                                    name={info.name}
-                                    job={info.job}
-                                    titleEvpYear={info.titleEvpYear +" "+ mdate.getFullYear()}
-                                    titleDonate={info.titleDonate}
-                                    donateValue={info.donateValue}
-                                    donateMax={info.donateMax}
-                                    activityValue={info.activityValue}
-                                    activityMax={info.activityMax}
-                                />
-                            )}
-                        </div>
-=======
                         {sidebarInfo.map((info) =>
                             <SidebarHomeUser
                                 avatar={info.avatar}
@@ -112,7 +85,6 @@ function Institution() {
                                 activityMax={info.activityMax}
                             />
                         )}
->>>>>>> a82ee0850f455b43830297467e96ced214358c3c
                     </div>
                 </div>
             </div>

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from "react";
+import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
 
 import "./HeaderUser.css";
@@ -6,22 +6,22 @@ import logo from "./../../images/ic_liferay_white.png";
 import PopupMenuForm from "../PopupMenuUser/PopupMenuForm";
 
 function HeaderUser() {
-    const [isShowing, setShowing] = useState();
+    const [isShowing, setShowing] = useState(false);
     
     function handlePopupForm() {
         const popupMenuFormContainer = document.getElementsByClassName("popup-menu-form-container")[0];
 
-        if (!isShowing) {
-            setShowing(true);
-            popupMenuFormContainer.style.display = "block";
+        if (isShowing) {
+            setShowing(false);
+            popupMenuFormContainer.style.display = "none";
 
             setTimeout(function() {
                 setShowing(false);
                 popupMenuFormContainer.style.display = "none";
-            }, 3000)
+            }, 3000);
         } else {
-            setShowing(false);
-            popupMenuFormContainer.style.display = "none";
+            setShowing(true);
+            popupMenuFormContainer.style.display = "block";
         }
     }
 
