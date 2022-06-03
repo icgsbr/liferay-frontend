@@ -34,7 +34,7 @@ function App() {
                             <Route path="/form" element={<Forms/>}/>
                             <Route path="/registeractivity" element={<RegisterActivity/>}/>
                             <Route path="/institution" element={<Institution/>}/>
-                            <Route path="/addInstituition" element={<AddInstitution/>}/>
+                            <Route path="/addInstitution" element={<AddInstitution/>}/>
                             <Route path="/institutionSelect" element={<InstitutionSelect/>}/>
                             <Route path="/homedetail" element={<HomeDetail/>}/>
                             <Route path="/registeractivitydetail" element={<RegisterActivityDetail/>}/>

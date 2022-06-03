@@ -8,11 +8,13 @@ import sidebarInfo from "../../Infos/sidebar-info";
 import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
 import Footer from "./../../Components/layout/Footer";
 import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
+import ButtonForm from "../../Components/ButtonForm";
+
 
 function FormActivity() {
     const mdate = new Date();
     const {context, setContext} = useContext(ModelContext);
-
+    
     return(
         <div className="institute-detail-container overflow-scroll">
             <HeaderUser/>
@@ -48,8 +50,9 @@ function FormActivity() {
                                     <tr>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="text" className="form-control" placeholder="Nome Primário"  aria-label="NomePrimary" aria-describedby="basic-addon1"/>
+                                                <span className="input-group-text" id="basic-addon1">#  </span>
+                                                <input type="text" className="form-control"
+                                                 placeholder="Nome Primário"  aria-label="NomePrimary" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                         <td>
@@ -154,7 +157,7 @@ function FormActivity() {
                                         </td>
                                         <td>
                                             <div className="form-check">
-                                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                                                <input className="form-check-input" type="checkbox" value= "" id="flexCheckDefault"/>
                                                 <label className="form-check-label" for="flexCheckDefault"> Educação</label>
                                             </div>                                            
                                         </td>
@@ -195,7 +198,7 @@ function FormActivity() {
                                         </td>
                                         <td>
                                             <div className="form-check">
-                                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                                                <input className="form-check-input" type="checkbox" name= "accept"value="" id="flexCheckDefault"/>
                                                 <label className="form-check-label" for="flexCheckDefault"> Doença / Transtorno mental</label>
                                             </div>
                                         </td>
@@ -226,7 +229,7 @@ function FormActivity() {
                                             </div>
                                         </td>
                                         <td>
-                                            <button type="submit" className="btn btn-primary">Confirmar</button>
+                                            <button type="submit" className="btn btn-primary" onClick={()=>ButtonForm()}>Confirmar</button>
                                         </td>
                                     </tr>
                                     <tr>
