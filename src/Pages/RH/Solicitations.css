@@ -1,0 +1,25 @@
+
+#select-filter-institution{
+    width: 180px;
+    border: none;
+    border-radius: 36px;
+    height: 36px;
+    padding: 0 8px;
+    background-color: #ffffff;
+    margin: 0 10px;
+}
+#select-order-solicitation {
+    width: 160px;
+    margin: 0 10px;
+    border-radius: 36px;
+    display: inline;
+}
+
+#btn-solicitation-donate {
+    border-radius: 36px;
+    margin-left: 10px;
+}
+#btn-solicitation-activite {
+    border-radius: 36px;
+    margin-left: 10px;
+}
