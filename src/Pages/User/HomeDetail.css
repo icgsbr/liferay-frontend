@@ -50,3 +50,19 @@
 .date-size-home-detail {
     font-size: 12px;
 }
+
+.table, thead, tbody, th, tr, td {
+    border: none !important;
+}
+
+.form-control {
+    margin-right: 20px;
+}
+
+.form-check-label {
+    margin-right: 20px;
+}
+
+.info-fields {
+    color:#0b63ce;
+}

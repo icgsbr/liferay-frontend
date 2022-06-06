@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 
 import "./FormActivity.css";
 import HeaderUser from "../../Components/LayoutUser/HeaderUser";
@@ -12,9 +12,46 @@ import ButtonForm from "../../Components/ButtonForm";
 
 
 function FormActivity() {
-    const mdate = new Date();
+    const mdate = new Date(); 
+    const [organizationName, setOrganizationName] = useState("")
     const {context, setContext} = useContext(ModelContext);
-    
+    const mapOrganization = {
+       "Imip" : {
+           url : "imip.com",
+           email: "imip@imip.com.br",
+           telefone: "123455",
+           nome_contato: "jorge",
+           sobrenome : "silva",
+           id: "1",
+           rua : "rua a",
+           cidade: "recife",
+           regiao: "pe",
+           cep: "1234"
+       }, 
+       "Solidariza Recife" : {
+        url : "solidarizarecife.com",
+        email: "solidarizarecife@solidarizarecife.com.br",
+        telefone: "999999",
+        nome_contato: "joao",
+        sobrenome : "costa",
+        id: "2",
+        rua : "rua b",
+        cidade: "recife",
+        regiao: "pe",
+        cep: "09876"
+       }
+    }
+    const handleOrganizationChange = (e) => {
+            const value = e.target.value
+            setOrganizationName (value)
+    }
+    const organizationData = mapOrganization[organizationName]
+    const organizations = Object.keys(mapOrganization)
+    const filteredOrganizations = organizations.filter((organization) => {
+         return organization.includes(organizationName)
+        })
+        
+
     return(
         <div className="institute-detail-container overflow-scroll">
             <HeaderUser/>
@@ -50,73 +87,79 @@ function FormActivity() {
                                     <tr>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#  </span>
-                                                <input type="text" className="form-control"
-                                                 placeholder="Nome Primário"  aria-label="NomePrimary" aria-describedby="basic-addon1"/>
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" list="datalistOptions" placeholder="Nome da Organização" onChange={handleOrganizationChange}  aria-label="NameOrg" aria-describedby="basic-addon1" value={organizationName}/>
+                                                <datalist id="datalistOptions">
+                                                    {filteredOrganizations.map((organization) => (
+                                                        <option value={organization}/>                                                        
+                                                    ))}
+                                                </datalist>
+                                            </div>
+                                            
+                                        </td>
+                                        <td>
+                                            <div className="input-group mb-3">
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" placeholder="Url"  aria-label="url" aria-describedby="basic-addon1" value={organizationData?.url}/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="text" className="form-control" placeholder="Nome Secundário"  aria-label="NomeSecondary" aria-describedby="basic-addon1"/>
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="email" className="form-control" placeholder="Email"  aria-label="Email" aria-describedby="basic-addon1"value={organizationData?.email}/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="email" className="form-control" placeholder="Email"  aria-label="Email" aria-describedby="basic-addon1"/>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="tel" className="form-control" placeholder="Telefone"  aria-label="Telefone" aria-describedby="basic-addon1"/>
-                                            </div>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="text" className="form-control" placeholder="Organização"  aria-label="Organization" aria-describedby="basic-addon1"/>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="text" className="form-control" placeholder="Número de Identificação Fiscal"  aria-label="FiscalNumberId" aria-describedby="basic-addon1"/>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="url" className="form-control" placeholder="URL"  aria-label="Url" aria-describedby="basic-addon1"/>
-                                            </div>
-                                        </td>
-                                        <td>
-                                            <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="text" className="form-control" placeholder="Rua"  aria-label="Street" aria-describedby="basic-addon1"/>
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="tel" className="form-control" placeholder="Telefone"  aria-label="Telefone" aria-describedby="basic-addon1"value={organizationData?.telefone}/>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="text" className="form-control" placeholder="Cidade"  aria-label="City" aria-describedby="basic-addon1"/>
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" placeholder="Nome do Contato"  aria-label="Contact Name" aria-describedby="basic-addon1"value={organizationData?.nome_contato}/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="text" className="form-control" placeholder="Região"  aria-label="Region" aria-describedby="basic-addon1"/>
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="url" className="form-control" placeholder="Sobrenome do Contato"  aria-label="lastname" aria-describedby="basic-addon1"value={organizationData?.sobrenome}/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
-                                                <input type="text" className="form-control" placeholder="Cep"  aria-label="PostalCode" aria-describedby="basic-addon1"/>
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" placeholder="Número de Identificação Fiscal"  aria-label="FiscalNumberId" aria-describedby="basic-addon1"value={organizationData?.id}/>
+                                            </div>
+                                        </td>
+
+                                        <td>
+                                            <div className="input-group mb-3">
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" placeholder="Rua"  aria-label="Street" aria-describedby="basic-addon1"value={organizationData?.rua}/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <div className="input-group mb-3">
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" placeholder="Cidade"  aria-label="City" aria-describedby="basic-addon1"value={organizationData?.cidade}/>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="input-group mb-3">
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" placeholder="Região"  aria-label="Region" aria-describedby="basic-addon1"value={organizationData?.regiao}/>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="input-group mb-3">
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" placeholder="Cep"  aria-label="PostalCode" aria-describedby="basic-addon1"value={organizationData?.cep}/>
                                             </div>
                                         </td>
                                         <td>
@@ -131,6 +174,14 @@ function FormActivity() {
                                                 <option value="valor8">Noruega</option>
                                                 <option value="valor9">Suiça</option>
                                             </select>
+                                        </td>
+                                        </tr>
+                                        <tr>
+                                        <td>
+                                            <div className="input-group mb-3">
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" placeholder="Horas de Voluntariado"  aria-label="VolunteerHours" aria-describedby="basic-addon1"/>
+                                            </div>
                                         </td>
                                     </tr>
                                     <tr>
@@ -172,7 +223,7 @@ function FormActivity() {
                                         <td>
                                             <div className="form-check">
                                                 <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
-                                                <label className="form-check-label" for="flexCheckDefault"> Fornecer comida / água / abrigo</label>
+                                                <label className="form-check-label" for="flexCheckDefault">Capacitação Profissional</label>
                                             </div>
                                         </td>
                                         <td>
@@ -183,7 +234,7 @@ function FormActivity() {
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
+                                                <span className="input-group-text" id="basic-addon1"></span>
                                                 <input type="text" className="form-control" placeholder="Para outros objetivos"  aria-label="Others" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
@@ -218,13 +269,13 @@ function FormActivity() {
                                     <tr>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
+                                                <span className="input-group-text" id="basic-addon1"></span>
                                                 <input type="text" className="form-control" placeholder="Para outro tipo vulnerabilidade"  aria-label="Others" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
+                                                <span className="input-group-text" id="basic-addon1"></span>
                                                 <input type="date" className="form-control"  aria-label="Date" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
@@ -235,7 +286,7 @@ function FormActivity() {
                                     <tr>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">#</span>
+                                                <span className="input-group-text" id="basic-addon1"></span>
                                                 <textarea className="form-control" aria-label="Organization Description" placeholder="Descrição da Organização"></textarea>
                                             </div>
                                         </td>

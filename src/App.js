@@ -17,6 +17,7 @@ import RegisterActivityDetail from "./Pages/User/RegisterActivityDetail";
 import InstitutionDetail from "./Pages/User/InstitutionDetail";
 import FormActivity from "./Pages/User/FormActivity";
 import RegistryForm from "./Pages/RH/RegistryForm";
+import FormDonation from "./Pages/User/FormDonation";
 
 function App() {
     const [context, setContext] = useState(null);
@@ -40,6 +41,7 @@ function App() {
                             <Route path="/solicitations" element={<Solicitations/>}/>
                             <Route path="/institutiondetail" element={<InstitutionDetail/>}/>
                             <Route path="/formactivity" element={<FormActivity/>}/>
+                            <Route path="/formdonation" element={<FormDonation/>}/>
                         </Routes>
                     </BrowserRouter>
                 </Suspense>
