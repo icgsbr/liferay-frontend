@@ -3,8 +3,8 @@ import React from "react";
 import "./HomeRH.css";
 import HeaderRH from "../../Components/LayoutRH/HeaderRH";
 import TitleInfoGlobalRH from "../../Components/TitleGlobal/TitleInfoGlobalRH";
-import homeUserFeedInfo from "../../Infos/home-user-feed-info";
-import HomeUserFeedCard from "../../Components/CardsUser/HomeUserFeedCard";
+import homeRHFeedInfo from "../../Infos/home-RH-feed-info";
+import HomeRHFeedCard from "../../Components/CardsUser/HomeRHFeedCard";
 import sidebarInfo from "../../Infos/sidebarRH-info";
 import SidebarHomeRH from "../../Components/SideBars/HomeRHSideBar";
 import Footer from "../../Components/layout/Footer";
@@ -19,15 +19,20 @@ function HomeRH() {
                     <div className="col-md-10 center-container-home">
                             <TitleInfoGlobalRH titleevpmain={"DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"}/>
                         <div className="feed-home-container">
-                            {homeUserFeedInfo.map((info) =>
-                                <HomeUserFeedCard
+                            {homeRHFeedInfo.map((info) =>
+                                <HomeRHFeedCard
+                                    id={info.id}
                                     img={info.img}
                                     avatar={info.avatar}
                                     username={info.username}
                                     userjob={info.userjob}
                                     nameinst={info.nameinst}
                                     dateinst={info.dateinst}
-                                    localeinst={info.localeinst}
+                                    cityinst={info.cityinst}
+                                    valor ={info.valor}
+                                    atividade ={info.atividade}
+                                    optionConcession = {info.optionConcession}
+
                                 />
                             )}
                         </div>

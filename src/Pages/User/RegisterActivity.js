@@ -14,12 +14,13 @@ import Footer from "../../Components/layout/Footer";
 function RegisterActivity() {
     const mdate = new Date();
 
+  
     return(
         <div className="register-activity-container overflow-scroll">
             <HeaderUser/>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-10 center-register-activity">
+                    <div className="col-md-10 center-register-activity order-1 order-md-0">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal

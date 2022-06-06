@@ -1,5 +1,4 @@
 import React, { useContext } from "react";
-
 import "./HomeDetail.css";
 import HeaderUser from "../../Components/LayoutUser/HeaderUser";
 import { ModelContext } from "../../Components/ModelContext";
@@ -39,6 +38,38 @@ function HomeDetail() {
                                     donateds={institutionInfo[context].donateds}
                                 />
                             }
+                        </div>
+                        <div className="col-md-10 home-detail-center-container">
+                            <table>
+                                <tbody>
+                                    <tr><td className="info-fields"><p><b>Você pode escolher um ou ambos campos:</b></p></td></tr>
+                                <tr>
+                                        <td>
+                                            <div className="input-group mb-3">
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" placeholder="Valor a ser Doado"  aria-label="Donation Value" aria-describedby="basic-addon1"/>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="input-group mb-3">
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="text" className="form-control" placeholder="Horas de Voluntariado"  aria-label="VolunteerHours" aria-describedby="basic-addon1"/>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div className="input-group mb-3">
+                                                <span className="input-group-text" id="basic-addon1"></span>
+                                                <input type="date" className="form-control"  aria-label="Date" aria-describedby="basic-addon1"/>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            <button type="submit" className="btn btn-primary">Confirmar</button>
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                     <div className="col-md-2 home-detail-card-sidebar-right">

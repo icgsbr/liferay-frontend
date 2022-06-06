@@ -19,7 +19,7 @@ function HeaderRH() {
                                     <NavLink className="nav-link" to="/admin">Home</NavLink>
                                 </li>
                                 <li className="nav-item">
-                                    <NavLink className="nav-link" to="/">Solicitações</NavLink>
+                                    <NavLink className="nav-link" to="/solicitations">Solicitações</NavLink>
                                 </li>
                                 <li className="nav-item">
                                     <NavLink className="nav-link" to="/">Relatórios</NavLink>

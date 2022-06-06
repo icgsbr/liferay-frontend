@@ -7,7 +7,7 @@ import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
 import homeUserFeedInfo from "../../Infos/home-user-feed-info";
 import HomeUserFeedCard from "../../Components/CardsUser/HomeUserFeedCard";
 import sidebarInfo from "../../Infos/sidebar-info";
-import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
+import SidebarHomeUser from "../../Components/SideBars/SidebarHomeUser";
 import Footer from "./../../Components/layout/Footer";
 
 function Home() {
@@ -18,7 +18,7 @@ function Home() {
             <HeaderUser/>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-10 center-container-home">
+                    <div className="col-md-10 center-container-home order-1 order-md-0">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
@@ -46,7 +46,10 @@ function Home() {
                                     userjob={info.userjob}
                                     nameinst={info.nameinst}
                                     dateinst={info.dateinst}
-                                    localeinst={info.localeinst}
+                                    cityinst={info.cityinst}
+                                    valor ={info.valor}
+                                    atividade ={info.atividade}
+                                    optionConcession = {info.optionConcession}
                                 />
                             )}
                         </div>
@@ -70,9 +73,10 @@ function Home() {
                         </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
-        </div>
+        
+            <Footer/>
+            </div>
     );
 }
 

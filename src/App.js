@@ -16,6 +16,8 @@ import HomeDetail from "./Pages/User/HomeDetail";
 import RegisterActivityDetail from "./Pages/User/RegisterActivityDetail";
 import InstitutionDetail from "./Pages/User/InstitutionDetail";
 import FormActivity from "./Pages/User/FormActivity";
+import RegistryForm from "./Pages/RH/RegistryForm";
+import FormDonation from "./Pages/User/FormDonation";
 
 function App() {
     const [context, setContext] = useState(null);
@@ -29,6 +31,7 @@ function App() {
                             <Route path="/" element={<Login/>}/>
                             <Route path="/home" element={<Home/>}/>
                             <Route path="/admin" element={<HomeRH/>}/>
+                            <Route path="/registryform" element={<RegistryForm />}/>
                             <Route path="/form" element={<Forms/>}/>
                             <Route path="/registeractivity" element={<RegisterActivity/>}/>
                             <Route path="/institution" element={<Institution/>}/>
@@ -38,6 +41,7 @@ function App() {
                             <Route path="/registeractivitydetail" element={<RegisterActivityDetail/>}/>
                             <Route path="/institutiondetail" element={<InstitutionDetail/>}/>
                             <Route path="/formactivity" element={<FormActivity/>}/>
+                            <Route path="/formdonation" element={<FormDonation/>}/>
                         </Routes>
                     </BrowserRouter>
                 </Suspense>

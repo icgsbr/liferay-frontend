@@ -1,4 +1,4 @@
-const homeUserFeedContent = [
+const homeRHFeedContent = [
     {
         id: 0,
         img: "https://s.concursosnobrasil.com.br/media/cache/f/imip-dsei-al-se_CrkewcF-1200x675.jpg",
@@ -6,7 +6,7 @@ const homeUserFeedContent = [
         username: "Maria",
         usernameSec: "Cristina",
         email:"maria@email.com",
-        tel: "(81) 91461-8811",
+        tel: "(81) 91111-1111",
         userjob: "Auxiliar administrativo",
         nameinst: "IMIP",
         cnpj:"00218100369",
@@ -25,7 +25,7 @@ const homeUserFeedContent = [
         objectivesOthers:null,
         groups: ["Doença/Transtorno mental"],
         groupOthers: null
-        
+
     },
     {
         id: 1,
@@ -48,8 +48,11 @@ const homeUserFeedContent = [
         cep: "50540-092",
         valor:null,
         atividade:7 + " hrs",
-        objectives:["Saúde",'Educação']
+        objectives:["Saúde",'Educação'],
+        objectivesOthers:null,
+        groups: ["Doença/Transtorno mental"],
+        groupOthers: null
     }
 ];
 
-export default homeUserFeedContent;
+export default homeRHFeedContent;
