@@ -13,6 +13,7 @@ import Footer from "../../Components/layout/Footer";
 
 function Solicitations() {
     //função trocar os options do select
+
     const Btn_all = () => {
         var select = document.getElementById("select-order-solicitation");
         var opt = ['Mais recentes','Mais antigas','Colaborador','Instituição'];
@@ -62,7 +63,7 @@ function Solicitations() {
                             <span>filtro</span>
                             <button className="btn btn-primary" id="btn-solicitation-donate" onClick={()=>{Btn_donate()}}>Doações</button>
                             <button className="btn btn-primary" id="btn-solicitation-activite" onClick={()=>{Btn_activite()}}>Atividades</button>
-                            <button className="btn btn-primary" id="btn-solicitation-activite" onClick={()=>{Btn_all()}}>Remover filtros</button>
+                            <button className="btn btn-primary" id="btn-solicitation-all" onClick={()=>{Btn_all()}}>Remover filtros</button>
                         </div>
                         <div className="feed-home-container">
                             {homeRHFeedInfo.map((info) =>
