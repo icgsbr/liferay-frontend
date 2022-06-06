@@ -117,8 +117,8 @@ function AddInstitution() {
                                 </tbody>
                             </table>
                         </div>
-                        <div id="btn-add-inst">
-                            <button type="submit" className="btn btn-primary" onClick={()=>alert("funcionando")}>Confirmar</button>
+                        <div>
+                            <button id="btn-add-inst" type="submit" className="btn btn-primary" onClick={()=>alert("funcionando")}>Confirmar</button>
                         </div>
                     </div>
                     <div className="col-md-2 institute-detail-card-sidebar-right">
@@ -140,8 +140,8 @@ function AddInstitution() {
                         </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     );
 }

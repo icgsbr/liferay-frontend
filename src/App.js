@@ -6,7 +6,7 @@ import Home from "./Pages/User/Home";
 import RegisterActivity from "./Pages/User/RegisterActivity";
 import Institution from "./Pages/User/Institution";
 import AddInstitution from "./Pages/User/AddInstitution"
-import Forms from "./Pages/User/Forms"
+import Report from "./Pages/RH/Report"
 import HomeRH from "./Pages/RH/HomeRH"
 import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
@@ -32,7 +32,7 @@ function App() {
                             <Route path="/home" element={<Home/>}/>
                             <Route path="/admin" element={<HomeRH/>}/>
                             <Route path="/registryform" element={<RegistryForm />}/>
-                            <Route path="/form" element={<Forms/>}/>
+                            <Route path="/report" element={<Report/>}/>
                             <Route path="/registeractivity" element={<RegisterActivity/>}/>
                             <Route path="/institution" element={<Institution/>}/>
                             <Route path="/addInstitution" element={<AddInstitution/>}/>

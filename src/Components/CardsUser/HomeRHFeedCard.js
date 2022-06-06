@@ -26,7 +26,7 @@ function HomeRHFeedCard(props) {
                 </div>
                 <div className="col-md-3 align-self-center ">
                     <h6 className="card-title title-card-info">
-                        {(props.optionConcession==="Propostas") ? "Doação no valor de "+ props.valor: "Atividade de "+props.atividade}
+                        {(props.optionConcession==="Propostas") ? "Doação no valor de "+ props.valor+" reais": "Atividade de "+props.atividade+" horas"}
                     </h6>
                 </div>
                 <div className="col-md-2 offset-md-2">

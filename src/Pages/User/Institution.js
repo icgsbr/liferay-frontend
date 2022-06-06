@@ -88,7 +88,6 @@ function Institution() {
                     </div>
                 </div>
             </div>
-            
             <Footer/>
         </div>
     );

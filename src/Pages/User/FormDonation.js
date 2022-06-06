@@ -15,28 +15,28 @@ function FormDonation() {
     const {context, setContext} = useContext(ModelContext);
     const mapOrganization = {
         "Imip" : {
-            url : "imip.com",
-            email: "imip@imip.com.br",
-            telefone: "123455",
-            nome_contato: "jorge",
-            sobrenome : "silva",
-            id: "1",
-            rua : "rua a",
-            cidade: "recife",
-            regiao: "pe",
-            cep: "1234"
+            url : "http://www1.imip.org.br/imip/home/index.html",
+            email: "maria@email.com",
+            telefone: "(81) 91461-8811",
+            nome_contato: "Maria",
+            sobrenome : "Cristina",
+            id: "0",
+            rua : "Rua dos Coelhos,200 - Boa Vista",
+            cidade: "Recife",
+            regiao: "PE",
+            cep: "50070-902"
         }, 
         "Solidariza Recife" : {
          url : "solidarizarecife.com",
          email: "solidarizarecife@solidarizarecife.com.br",
          telefone: "999999",
-         nome_contato: "joao",
-         sobrenome : "costa",
-         id: "2",
-         rua : "rua b",
-         cidade: "recife",
-         regiao: "pe",
-         cep: "09876"
+         nome_contato: "Maria",
+         sobrenome : "Cristina",
+         id: "1",
+         rua : "Centro do Recife",
+         cidade: "Recife",
+         regiao: "PR",
+         cep: "50540-092"
         }
      }
      const handleOrganizationChange = (e) => {
@@ -60,7 +60,7 @@ function FormDonation() {
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
-                                    titleevpmain="FORMULÁRIO DE ATIVIDADES"
+                                    titleevpmain="FORMULÁRIO DE DOAÇÕES"
                                     titledonateglobal={info.titledonateglobal}
                                     titledonatevalor={info.titledonatevalor}
                                     donatevalue={info.donatevalue}
@@ -313,8 +313,8 @@ function FormDonation() {
                         </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     );
 }
