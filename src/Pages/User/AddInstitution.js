@@ -76,7 +76,7 @@ function AddInstitution() {
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1">Endereço</span>
-                                                <input type="text" className="form-control" placeholder="Rua"   aria-label="Street" aria-describedby="basic-addon1"/>
+                                                <input type="text" className="form-control" placeholder="Rua..."   aria-label="Street" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                         <td>
@@ -118,7 +118,7 @@ function AddInstitution() {
                             </table>
                         </div>
                         <div>
-                            <button id="btn-add-inst" type="submit" className="btn btn-primary" onClick={()=>alert("funcionando")}>Confirmar</button>
+                            <button id="btn-add-inst" type="submit" className="btn btn-primary" onClick={()=>alert("Instituição adicionada!")}>Confirmar</button>
                         </div>
                     </div>
                     <div className="col-md-2 institute-detail-card-sidebar-right">

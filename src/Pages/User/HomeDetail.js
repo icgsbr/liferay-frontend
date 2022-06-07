@@ -65,7 +65,7 @@ function HomeDetail() {
                                     </tr>
                                     <tr>
                                         <td>
-                                            <button type="submit" className="btn btn-primary">Confirmar</button>
+                                            <button type="submit" className="btn btn-primary home-detail">Confirmar</button>
                                         </td>
                                     </tr>
                                 </tbody>
