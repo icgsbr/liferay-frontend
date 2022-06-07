@@ -1,9 +1,11 @@
 .login-page-container {
+    flex-direction: column;
     position: relative;
     width: 100vw;
     height: 100vh;
     display: flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: end;
     align-items: center;
     text-align: center;
     background-color: #0b63ce;
@@ -16,6 +18,7 @@
 .login-page-card {
     padding: 24px;
     width: 50%;
+    margin-bottom: 6%;
     max-width: 320px;
     border-radius: 24px;
     background-color: #ffffff;

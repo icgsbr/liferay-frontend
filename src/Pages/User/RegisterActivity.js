@@ -73,7 +73,7 @@ function RegisterActivity() {
                             )}
                         </div>
                         <div className="button-new-activity-container">
-                            <NavLink className="btn btn-primary button-new-register-activity" to="">Criar nova atividade</NavLink>
+                            <NavLink className="btn btn-primary button-new-register-activity" to="/formactivity">Criar nova atividade</NavLink>
                         </div>
                     </div>
                 </div>

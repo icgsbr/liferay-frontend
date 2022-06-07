@@ -31,7 +31,7 @@ function RegistryForm() {
                                     tel = {homeRHFeedInfo[context].tel} 
                                     userjob = {homeRHFeedInfo[context].userjob} 
                                     nameinst = {homeRHFeedInfo[context].nameinst}
-                                    CNPJinst = {homeRHFeedInfo[context].CNPJinst}
+                                    cnpj = {homeRHFeedInfo[context].cnpj}
                                     addressinst = {homeRHFeedInfo[context].addressinst}
                                     city = {homeRHFeedInfo[context].city}
                                     region = {homeRHFeedInfo[context].region}
@@ -74,8 +74,8 @@ function RegistryForm() {
                         </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     );
 }

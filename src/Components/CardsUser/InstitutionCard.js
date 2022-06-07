@@ -15,7 +15,7 @@ function InstitutionCard(props) {
         <div className="card mb-3">
             <div className="row g-0" onClick={() => {handlerInstituteDetail()}}>
                 <div className="col-md-2">
-                    <img className="img-fluid rounded-start" src={props.img} alt="image card"/>
+                    <img className="img-fluid rounded-start"  src={props.img} alt="image card"/>
                 </div>
                 <div className="col-md-6">
                     <div className="card-body card-body-institute">

@@ -1,6 +1,6 @@
 import React from "react";
 
-import "./HomeRH.css";
+import "./Solicitations.css";
 import HeaderRH from "../../Components/LayoutRH/HeaderRH";
 import TitleInfoGlobalRH from "../../Components/TitleGlobal/TitleInfoGlobalRH";
 import homeRHFeedInfo from "../../Infos/home-RH-feed-info";
@@ -9,7 +9,40 @@ import sidebarInfo from "../../Infos/sidebarRH-info";
 import SidebarHomeRH from "../../Components/SideBars/HomeRHSideBar";
 import Footer from "../../Components/layout/Footer";
 
-function HomeRH() {
+
+
+function Solicitations() {
+    //função trocar os options do select
+
+    const Btn_all = () => {
+        var select = document.getElementById("select-order-solicitation");
+        var opt = ['Mais recentes','Mais antigas','Colaborador','Instituição'];
+        select.replaceChildren();
+        opt.forEach(function (element,chave){
+            select.appendChild(new Option(element,chave))
+            
+        })
+    }
+
+    const Btn_donate = () => {
+        var select = document.getElementById("select-order-solicitation");
+        var opt = ['Maior valor','Menor valor'];
+        select.replaceChildren();
+        opt.forEach(function (element,chave){
+            select.appendChild(new Option(element,chave))
+            
+        })
+    }
+
+    const Btn_activite = () => {
+        var select = document.getElementById("select-order-solicitation");
+        var opt = ['Mais horas','Menos horas'];
+        select.replaceChildren();
+        opt.forEach(function (element,chave){
+            select.appendChild(new Option(element,chave))
+            
+        })
+    }
     var mdate = new Date();
     return(
         <div className="home-user-container overflow-scroll">
@@ -17,7 +50,21 @@ function HomeRH() {
             <div className="container-fluid">
                 <div className="row">
                     <div className="col-md-10 center-container-home">
-                            <TitleInfoGlobalRH titleevpmain={"DOAÇÕES E ATIVIDADES VOLUNTÁRIAS"}/>
+                            <TitleInfoGlobalRH titleevpmain={"SOLICITAÇÕES"}/>
+                            <div className="filter-institution-container">
+                            <input type="search" id="search-institution" placeholder="Search" name="search"/>
+                            <span>ordenar</span>
+                            <select className="form-select" id="select-order-solicitation" name="selectFilterInstitution">
+                                <option value="1" selected >Mais recentes</option>
+                                <option value="2">Mais antigas</option>
+                                <option value="3">Colaborador</option>
+                                <option value="3">Instituição</option>
+                            </select>
+                            <span>filtro</span>
+                            <button className="btn btn-primary" id="btn-solicitation-donate" onClick={()=>{Btn_donate()}}>Doações</button>
+                            <button className="btn btn-primary" id="btn-solicitation-activite" onClick={()=>{Btn_activite()}}>Atividades</button>
+                            <button className="btn btn-primary" id="btn-solicitation-all" onClick={()=>{Btn_all()}}>Remover filtros</button>
+                        </div>
                         <div className="feed-home-container">
                             {homeRHFeedInfo.map((info) =>
                                 <HomeRHFeedCard
@@ -62,4 +109,4 @@ function HomeRH() {
     );
 }
 
-export default HomeRH;
+export default Solicitations;
