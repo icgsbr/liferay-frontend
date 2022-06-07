@@ -47,7 +47,7 @@ function Institution() {
                             </select>
                             <span>filtro</span>
                             <button className="btn btn-primary" id="btn-filter-institution">Minhas Instituições</button>
-                                </div>
+                        </div>
                         <div className="institution-card-container">
                             {institutionInfo.map((info) =>
                                 <InstitutionCard
@@ -88,7 +88,6 @@ function Institution() {
                     </div>
                 </div>
             </div>
-            
             <Footer/>
         </div>
     );

@@ -1,0 +1,20 @@
+
+#select-order-solicitation {
+    width: 160px;
+    margin: 0 10px;
+    border-radius: 36px;
+    display: inline;
+}
+
+#btn-solicitation-donate {
+    border-radius: 36px;
+    margin-left: 10px;
+}
+#btn-solicitation-activite {
+    border-radius: 36px;
+    margin-left: 10px;
+}
+#btn-solicitation-all {
+    border-radius: 36px;
+    margin-left: 10px;
+}
