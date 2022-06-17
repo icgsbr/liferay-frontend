@@ -2,16 +2,9 @@
     position: relative;
     top: 0;
     bottom: 0;
-    margin: 64px 0;
 }
 .institution-card-container{
     color:#0b63ce;
-}
-
-.overflow-scroll {
-    height: 100vh;
-    overflow-y: scroll;
-    padding-bottom:3%;
 }
 
 .sidebar-right-institution {

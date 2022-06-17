@@ -2,15 +2,7 @@
     position: relative;
     top: 0;
     bottom: 0;
-    margin: 64px 0;
 }
-
-.overflow-scroll {
-    height: 100vh;
-    overflow-y: scroll;
-    padding-bottom: 3%;
-}
-
 
 .register-detail-card-sidebar-right {
     position: relative;

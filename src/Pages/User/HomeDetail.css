@@ -2,18 +2,12 @@
     position: relative;
     top: 0;
     bottom: 0;
-    margin: 64px 0;
-}
 
-.overflow-scroll {
-    height: 100vh;
-    overflow-y: scroll;
-    padding-bottom: 3%;
 }
 
 .home-detail-card-sidebar-right {
     position: relative;
-    height: 100vh !important;
+    height: 80vh !important;
 }
 
 .home-detail-card-sidebar-container {

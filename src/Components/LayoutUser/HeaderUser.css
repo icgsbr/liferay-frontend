@@ -1,11 +1,13 @@
 .header-user-container {
-    position: fixed;
+    position: relative;
     width: 100%;
     top: 0;
     left: 0;
     z-index: 1000;
 }
-
+#responsive-menu{
+    display: none;
+}
 nav.bg-light {
     background-color: #0b63ce !important;
 }

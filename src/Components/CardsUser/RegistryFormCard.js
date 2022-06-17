@@ -18,7 +18,6 @@ function RegistryFormCard(props) {
         <div key={props.id} className="solicitation-register" >
             <div id="title-typeSolicitation" className="row"><h5>{TypeSolicitation() + " para a instituição " + props.nameinst}</h5></div>
             <div className="row">
-
                 <div className="col-sm-5 order-1 order-md-0">
                     
                     <span className="registryData-text"><strong> Nome:&nbsp;</strong>{props.username}  {props.usernameSec}</span>
