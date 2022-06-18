@@ -3,6 +3,7 @@ import {NavLink} from "react-router-dom";
 
 import "../LayoutRH/HeaderRH";
 import logo from "./../../images/ic_liferay_white.png";
+import ModalMenuRH from "../ModalMenuRH";
 
 function HeaderRH() {
     return (
@@ -13,6 +14,9 @@ function HeaderRH() {
                         <NavLink className="link-icon-liferay-header-use" to="/">
                             <img id="icon-liferay-header-use" src={logo} alt="icon"/>
                         </NavLink>
+                        <div id="responsive-menu">
+                            <ModalMenuRH />
+                        </div>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">

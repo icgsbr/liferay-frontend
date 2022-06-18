@@ -22,12 +22,9 @@ return (
       <Modal.Header closeButton>
         <Modal.Title>MENU</Modal.Title>
       </Modal.Header>
-      <Modal.Body><Link  to="/home">Home</Link></Modal.Body>
-      <Modal.Body><Link  to="/registeractivity">Registro de Atividade</Link></Modal.Body>
-      <Modal.Body><Link  to="/institution">Instituições</Link></Modal.Body>
-      <Modal.Body><Link  to="/formdonation">Formulário de doações</Link></Modal.Body>
-      <Modal.Body><Link  to="/formactivity">Formulário de atividades</Link></Modal.Body>
       <Modal.Body><Link  to="/admin">Administrador</Link></Modal.Body>
+      <Modal.Body><Link  to="/solicitations">Solicitações</Link></Modal.Body>
+      <Modal.Body><Link  to="/report">Relatórios</Link></Modal.Body>
       <Modal.Footer>
       </Modal.Footer>
     </Modal>

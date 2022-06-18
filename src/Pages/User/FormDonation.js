@@ -87,7 +87,7 @@ function FormDonation() {
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
-                                                <input type="text" className="form-control" list="datalistOptions" placeholder="Nome da Organização" onChange={handleOrganizationChange}  aria-label="NameOrg" aria-describedby="basic-addon1" value={organizationName}/>
+                                                <input type="text" className="form-control" list="datalistOptions" placeholder="Instituição" onChange={handleOrganizationChange}  aria-label="NameOrg" aria-describedby="basic-addon1" value={organizationName}/>
                                                 <datalist id="datalistOptions">
                                                     {filteredOrganizations.map((organization) => (
                                                         <option value={organization}/>                                                        
@@ -119,19 +119,19 @@ function FormDonation() {
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
-                                                <input type="text" className="form-control" placeholder="Nome do Contato"  aria-label="Contact Name" aria-describedby="basic-addon1"value={organizationData?.nome_contato}/>
+                                                <input type="text" className="form-control" placeholder="1º nome"  aria-label="Contact Name" aria-describedby="basic-addon1"value={organizationData?.nome_contato}/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
-                                                <input type="url" className="form-control" placeholder="Sobrenome do Contato"  aria-label="lastname" aria-describedby="basic-addon1"value={organizationData?.sobrenome}/>
+                                                <input type="url" className="form-control" placeholder="Sobrenome"  aria-label="lastname" aria-describedby="basic-addon1"value={organizationData?.sobrenome}/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
-                                                <input type="text" className="form-control" placeholder="Número de Identificação Fiscal"  aria-label="FiscalNumberId" aria-describedby="basic-addon1"value={organizationData?.id}/>
+                                                <input type="text" className="form-control" placeholder="CNPJ"  aria-label="FiscalNumberId" aria-describedby="basic-addon1"value={organizationData?.id}/>
                                             </div>
                                         </td>
 
@@ -179,7 +179,7 @@ function FormDonation() {
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
-                                                <input type="text" className="form-control" placeholder="Valor a ser Doado"  aria-label="DonationValue" aria-describedby="basic-addon1"/>
+                                                <input type="text" className="form-control" placeholder="Valor"  aria-label="DonationValue" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                     </tr>
@@ -284,7 +284,7 @@ function FormDonation() {
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div className="input-group mb-3">
+                                            <div  className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
                                                 <textarea className="form-control" aria-label="Organization Description" placeholder="Descrição da Organização"></textarea>
                                             </div>

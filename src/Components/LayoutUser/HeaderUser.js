@@ -3,7 +3,6 @@ import {NavLink} from "react-router-dom";
 import "./HeaderUser.css";
 import logo from "./../../images/ic_liferay_white.png";
 import PopupMenuForm from "../PopupMenuUser/PopupMenuForm";
-import {Link} from "react-router-dom";
 import ModalMenu from "../ModalMenu"
 
 function HeaderUser() {
