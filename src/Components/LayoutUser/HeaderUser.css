@@ -1,3 +1,9 @@
+@media screen and (max-width:1000px) {
+    div#responsive-menu{
+        display:block;
+    }
+}
+
 .header-user-container {
     position: relative;
     width: 100%;
