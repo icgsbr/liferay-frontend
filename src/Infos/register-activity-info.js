@@ -2,7 +2,7 @@ const registerActivityInfo = [
     {
         id: 0,
         img: "https://s.concursosnobrasil.com.br/media/cache/f/imip-dsei-al-se_CrkewcF-1200x675.jpg",
-        name: "IMP",
+        name: "IMIP",
         phone: "(81) 2122-4100",
         city: "Recife",
         activityText: "Horas de atividades voluntárias",

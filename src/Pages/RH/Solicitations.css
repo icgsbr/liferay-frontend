@@ -1,7 +1,22 @@
+@media screen and (max-width:1030px) {
+    #select-order-solicitation {
+        margin: 15px 0;
+    }
+    #btn-solicitation-donate {
+       margin: 15px 0;
+    }
+    #btn-solicitation-activite {
+      margin:15px 0;
+    }
+    #btn-solicitation-all {
+        margin: 15px 0;
+    }
+}
 
 #select-order-solicitation {
     width: 160px;
-    margin: 0 10px;
+    margin-left:10px;
+    margin-right:10px;
     border-radius: 36px;
     display: inline;
 }

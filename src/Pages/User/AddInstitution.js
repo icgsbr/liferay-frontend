@@ -49,46 +49,39 @@ function AddInstitution() {
                                     <tr>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">Organização</span>
-                                                <input type="text" className="form-control"  aria-label="Organization" aria-describedby="basic-addon1"/>
+                                                <input type="text" className="form-control" placeholder="Instituição"  aria-label="Organization" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">CNPJ</span>
-                                                <input type="text" className="form-control"  aria-label="FiscalNumberId" aria-describedby="basic-addon1"/>
+                                                <input type="text" className="form-control" placeholder="CNPJ" aria-label="FiscalNumberId" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">Contato</span>
                                                 <input type="url" className="form-control"  placeholder ="url"aria-label="Url" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">Cidade</span>
-                                                <input type="text" className="form-control"  aria-label="City" aria-describedby="basic-addon1"/>
+                                                <input type="text" className="form-control" placeholder="Cidade"   aria-label="City" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                     </tr>
                                     <tr>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">Endereço</span>
-                                                <input type="text" className="form-control" placeholder="Rua..."   aria-label="Street" aria-describedby="basic-addon1"/>
+                                                <input type="text" className="form-control" placeholder="Endereço"   aria-label="Street" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">Região</span>
-                                                <input type="text" className="form-control"  aria-label="Region" aria-describedby="basic-addon1"/>
+                                                <input type="text" className="form-control" placeholder="Região"  aria-label="Region" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">CEP</span>
-                                                <input type="text" className="form-control" aria-label="PostalCode" aria-describedby="basic-addon1"/>
+                                                <input type="text" className="form-control" placeholder="CEP"  aria-label="PostalCode" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                         <td>
@@ -109,8 +102,7 @@ function AddInstitution() {
                                     <tr>
                                         <td>
                                             <div className="input-group mb-3">
-                                                <span className="input-group-text" id="basic-addon1">Descrição da organização</span>
-                                                <textarea id="desc-inst"className="form-control" aria-label="Organization Description"></textarea>
+                                                <textarea id="desc-inst"className="form-control" placeholder="Descrição da organização"  aria-label="Organization Description"></textarea>
                                             </div>
                                         </td>
                                     </tr>

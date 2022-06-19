@@ -1,3 +1,17 @@
+@media screen and (max-width:860px) {
+    .filter-institution-container {
+        flex-direction: column;
+    }
+    #btn-filter-institution {
+        margin-top: 20px;
+    }
+    #search-institution {
+        margin: 20px 0;
+    }
+    #select-order-institution{
+        margin: 20px 0;
+    }
+}
 .institution-container {
     position: relative;
     top: 0;
@@ -9,7 +23,7 @@
 
 .sidebar-right-institution {
     position: relative;
-    height: 80vh !important;
+    height: 100vh !important;
 }
 
 .card-body-institute {
@@ -44,7 +58,8 @@
     height: 36px;
     padding: 0 8px;
     background-color: #ffffff;
-    margin: 0 10px;
+    margin-left:10px;
+    margin-right: 10px;
 }
 #select-filter-institution{
     width: 180px;
@@ -57,7 +72,8 @@
 }
 #select-order-institution {
     width: 200px;
-    margin: 0 10px;
+    margin-left:10px;
+    margin-right: 10px;
     border-radius: 36px;
     display: inline;
 }
