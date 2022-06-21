@@ -1,6 +1,6 @@
 import React, { useContext, useState } from "react";
 
-import "./FormActivity.css";
+import "./FormDonation.css";
 import HeaderUser from "../../Components/LayoutUser/HeaderUser";
 import titleGlobalInfo from "../../Infos/title-info-global";
 import { ModelContext } from "../../Components/ModelContext";
@@ -15,28 +15,28 @@ function FormDonation() {
     const {context, setContext} = useContext(ModelContext);
     const mapOrganization = {
         "Imip" : {
-            url : "imip.com",
-            email: "imip@imip.com.br",
-            telefone: "123455",
-            nome_contato: "jorge",
-            sobrenome : "silva",
-            id: "1",
-            rua : "rua a",
-            cidade: "recife",
-            regiao: "pe",
-            cep: "1234"
+            url : "http://www1.imip.org.br/imip/home/index.html",
+            email: "maria@email.com",
+            telefone: "(81) 91461-8811",
+            nome_contato: "Maria",
+            sobrenome : "Cristina",
+            id: "0",
+            rua : "Rua dos Coelhos,200 - Boa Vista",
+            cidade: "Recife",
+            regiao: "PE",
+            cep: "50070-902"
         }, 
         "Solidariza Recife" : {
          url : "solidarizarecife.com",
          email: "solidarizarecife@solidarizarecife.com.br",
          telefone: "999999",
-         nome_contato: "joao",
-         sobrenome : "costa",
-         id: "2",
-         rua : "rua b",
-         cidade: "recife",
-         regiao: "pe",
-         cep: "09876"
+         nome_contato: "Maria",
+         sobrenome : "Cristina",
+         id: "1",
+         rua : "Centro do Recife",
+         cidade: "Recife",
+         regiao: "PR",
+         cep: "50540-092"
         }
      }
      const handleOrganizationChange = (e) => {
@@ -60,7 +60,7 @@ function FormDonation() {
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
-                                    titleevpmain="FORMULÁRIO DE ATIVIDADES"
+                                    titleevpmain="FORMULÁRIO DE DOAÇÕES"
                                     titledonateglobal={info.titledonateglobal}
                                     titledonatevalor={info.titledonatevalor}
                                     donatevalue={info.donatevalue}
@@ -87,7 +87,7 @@ function FormDonation() {
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
-                                                <input type="text" className="form-control" list="datalistOptions" placeholder="Nome da Organização" onChange={handleOrganizationChange}  aria-label="NameOrg" aria-describedby="basic-addon1" value={organizationName}/>
+                                                <input type="text" className="form-control" list="datalistOptions" placeholder="Instituição" onChange={handleOrganizationChange}  aria-label="NameOrg" aria-describedby="basic-addon1" value={organizationName}/>
                                                 <datalist id="datalistOptions">
                                                     {filteredOrganizations.map((organization) => (
                                                         <option value={organization}/>                                                        
@@ -119,19 +119,19 @@ function FormDonation() {
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
-                                                <input type="text" className="form-control" placeholder="Nome do Contato"  aria-label="Contact Name" aria-describedby="basic-addon1"value={organizationData?.nome_contato}/>
+                                                <input type="text" className="form-control" placeholder="1º nome"  aria-label="Contact Name" aria-describedby="basic-addon1"value={organizationData?.nome_contato}/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
-                                                <input type="url" className="form-control" placeholder="Sobrenome do Contato"  aria-label="lastname" aria-describedby="basic-addon1"value={organizationData?.sobrenome}/>
+                                                <input type="url" className="form-control" placeholder="Sobrenome"  aria-label="lastname" aria-describedby="basic-addon1"value={organizationData?.sobrenome}/>
                                             </div>
                                         </td>
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
-                                                <input type="text" className="form-control" placeholder="Número de Identificação Fiscal"  aria-label="FiscalNumberId" aria-describedby="basic-addon1"value={organizationData?.id}/>
+                                                <input type="text" className="form-control" placeholder="CNPJ"  aria-label="FiscalNumberId" aria-describedby="basic-addon1"value={organizationData?.id}/>
                                             </div>
                                         </td>
 
@@ -179,7 +179,7 @@ function FormDonation() {
                                         <td>
                                             <div className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
-                                                <input type="text" className="form-control" placeholder="Valor a ser Doado"  aria-label="DonationValue" aria-describedby="basic-addon1"/>
+                                                <input type="text" className="form-control" placeholder="Valor"  aria-label="DonationValue" aria-describedby="basic-addon1"/>
                                             </div>
                                         </td>
                                     </tr>
@@ -284,7 +284,7 @@ function FormDonation() {
                                     </tr>
                                     <tr>
                                         <td>
-                                            <div className="input-group mb-3">
+                                            <div  className="input-group mb-3">
                                                 <span className="input-group-text" id="basic-addon1"></span>
                                                 <textarea className="form-control" aria-label="Organization Description" placeholder="Descrição da Organização"></textarea>
                                             </div>
@@ -313,8 +313,8 @@ function FormDonation() {
                         </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     );
 }

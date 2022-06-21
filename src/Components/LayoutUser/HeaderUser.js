@@ -1,9 +1,9 @@
 import React, {useState} from "react";
 import {NavLink} from "react-router-dom";
-
 import "./HeaderUser.css";
 import logo from "./../../images/ic_liferay_white.png";
 import PopupMenuForm from "../PopupMenuUser/PopupMenuForm";
+import ModalMenu from "../ModalMenu"
 
 function HeaderUser() {
     const [isShowing, setShowing] = useState(false);
@@ -33,6 +33,9 @@ function HeaderUser() {
                         <NavLink className="link-icon-liferay-header-use" to="/">
                             <img id="icon-liferay-header-use" src={logo} alt="icon"/>
                         </NavLink>
+                        <div id="responsive-menu">
+                            <ModalMenu />
+                        </div>
                         <div className="collapse navbar-collapse" id="navbarNav">
                             <ul className="navbar-nav">
                                 <li className="nav-item">

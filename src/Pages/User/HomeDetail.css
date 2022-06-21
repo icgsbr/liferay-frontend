@@ -2,18 +2,12 @@
     position: relative;
     top: 0;
     bottom: 0;
-    margin: 64px 0 64px 3%;
-}
 
-.overflow-scroll {
-    height: 100vh;
-    overflow-y: scroll;
-    padding-bottom: 3%;
 }
 
 .home-detail-card-sidebar-right {
     position: relative;
-    height: 100vh !important;
+    height: 80vh !important;
 }
 
 .home-detail-card-sidebar-container {
@@ -43,9 +37,6 @@
     padding: 0 !important;
 }
 
-.image-bottom-card-home-detail {
-    height: 260px !important;
-}
 
 .date-size-home-detail {
     font-size: 12px;
@@ -65,4 +56,7 @@
 
 .info-fields {
     color:#0b63ce;
+}
+.btn.btn-primary.home-detail{
+    margin-bottom: 3%;
 }

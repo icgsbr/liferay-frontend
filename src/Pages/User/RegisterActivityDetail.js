@@ -59,8 +59,8 @@ function RegisterActivityDetail() {
                         </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     );
 }

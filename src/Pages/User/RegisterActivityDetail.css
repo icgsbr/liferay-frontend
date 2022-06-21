@@ -2,19 +2,13 @@
     position: relative;
     top: 0;
     bottom: 0;
-    margin: 64px 0 64px 3% ;
-}
-
-.overflow-scroll {
-    height: 100vh;
-    overflow-y: scroll;
-    padding-bottom: 3%;
 }
 
 .register-detail-card-sidebar-right {
     position: relative;
     height: 100vh !important;
 }
+
 
 .register-detail-card-sidebar-container {
     text-align: center;
@@ -41,10 +35,6 @@
     color:#0b63ce;
     margin: 0 !important;
     padding: 0 !important;
-}
-
-.image-bottom-card-register-detail {
-    height: 260px !important;
 }
 
 .date-size-register-detail {

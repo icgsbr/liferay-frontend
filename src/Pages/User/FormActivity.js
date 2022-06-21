@@ -8,6 +8,8 @@ import sidebarInfo from "../../Infos/sidebar-info";
 import SidebarHomeUser from "../../Components/SideBars/HomeUserSideBar";
 import Footer from "./../../Components/layout/Footer";
 import TitleInfoGlobal from "../../Components/TitleGlobal/TitleInfoGlobal";
+import ButtonForm from "../../Components/ButtonForm";
+
 
 function FormActivity() {
     const mdate = new Date(); 
@@ -206,7 +208,7 @@ function FormActivity() {
                                         </td>
                                         <td>
                                             <div className="form-check">
-                                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                                                <input className="form-check-input" type="checkbox" value= "" id="flexCheckDefault"/>
                                                 <label className="form-check-label" for="flexCheckDefault"> Educação</label>
                                             </div>                                            
                                         </td>
@@ -247,7 +249,7 @@ function FormActivity() {
                                         </td>
                                         <td>
                                             <div className="form-check">
-                                                <input className="form-check-input" type="checkbox" value="" id="flexCheckDefault"/>
+                                                <input className="form-check-input" type="checkbox" name= "accept"value="" id="flexCheckDefault"/>
                                                 <label className="form-check-label" for="flexCheckDefault"> Doença / Transtorno mental</label>
                                             </div>
                                         </td>
@@ -278,7 +280,7 @@ function FormActivity() {
                                             </div>
                                         </td>
                                         <td>
-                                            <button type="submit" className="btn btn-primary">Confirmar</button>
+                                            <button type="submit" className="btn btn-primary" onClick={()=>ButtonForm()}>Confirmar</button>
                                         </td>
                                     </tr>
                                     <tr>
@@ -312,8 +314,8 @@ function FormActivity() {
                         </div>
                     </div>
                 </div>
-                <Footer/>
             </div>
+            <Footer/>
         </div>
     );
 }

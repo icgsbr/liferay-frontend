@@ -1,16 +1,24 @@
+@media screen and (max-width:860px) {
+    .filter-institution-container {
+        flex-direction: column;
+    }
+    #btn-filter-institution {
+        margin-top: 20px;
+    }
+    #search-institution {
+        margin: 20px 0;
+    }
+    #select-order-institution{
+        margin: 20px 0;
+    }
+}
 .institution-container {
     position: relative;
     top: 0;
     bottom: 0;
-    margin: 64px 0 64px 3% ;
 }
 .institution-card-container{
     color:#0b63ce;
-}
-.overflow-scroll {
-    height: 100vh;
-    overflow-y: scroll;
-    padding-bottom:3%;
 }
 
 .sidebar-right-institution {
@@ -35,7 +43,7 @@
 }
 
 .filter-institution-container {
-    background-color: #0b63ce4f;
+    background-color: rgba(11,99,206,0.17);
     border-radius: 0 50px 50px 0;
     margin-bottom: 16px;
     padding: 16px;
@@ -50,7 +58,8 @@
     height: 36px;
     padding: 0 8px;
     background-color: #ffffff;
-    margin: 0 10px;
+    margin-left:10px;
+    margin-right: 10px;
 }
 #select-filter-institution{
     width: 180px;
@@ -63,7 +72,8 @@
 }
 #select-order-institution {
     width: 200px;
-    margin: 0 10px;
+    margin-left:10px;
+    margin-right: 10px;
     border-radius: 36px;
     display: inline;
 }
@@ -76,4 +86,6 @@
     color: #0b63ce;
     margin-left: 60%;
     position:fixed;
+    bottom: 10%;
+    right: 20%;
 }

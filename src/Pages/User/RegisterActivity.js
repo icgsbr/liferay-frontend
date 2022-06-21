@@ -20,7 +20,7 @@ function RegisterActivity() {
             <HeaderUser/>
             <div className="container-fluid">
                 <div className="row">
-                    <div className="col-md-10 center-register-activity order-1 order-md-0">
+                    <div className="col-md-10 center-register-activity">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
@@ -73,7 +73,7 @@ function RegisterActivity() {
                             )}
                         </div>
                         <div className="button-new-activity-container">
-                            <NavLink className="btn btn-primary button-new-register-activity" to="">Criar nova atividade</NavLink>
+                            <NavLink className="btn btn-primary button-new-register-activity" to="/formactivity">Criar nova atividade</NavLink>
                         </div>
                     </div>
                 </div>

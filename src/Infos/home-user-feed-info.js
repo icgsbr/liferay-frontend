@@ -49,7 +49,8 @@ const homeUserFeedContent = [
         valor:null,
         atividade:7 + " hrs",
         objectives:["Saúde",'Educação']
-    }
+    },
+    
 ];
 
 export default homeUserFeedContent;

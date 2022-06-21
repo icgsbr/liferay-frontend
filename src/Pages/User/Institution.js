@@ -20,7 +20,7 @@ function Institution() {
             <div className="container-fluid">
                 <div className="row">
      
-                    <div className="col-md-10 center-institution order-1 order-md-0">
+                    <div className="col-md-10 center-institution">
                         <div className="title-global-info-container">
                             {titleGlobalInfo.map((info) =>
                                 <TitleInfoGlobal
@@ -47,7 +47,7 @@ function Institution() {
                             </select>
                             <span>filtro</span>
                             <button className="btn btn-primary" id="btn-filter-institution">Minhas Instituições</button>
-                                </div>
+                        </div>
                         <div className="institution-card-container">
                             {institutionInfo.map((info) =>
                                 <InstitutionCard
@@ -88,7 +88,6 @@ function Institution() {
                     </div>
                 </div>
             </div>
-            
             <Footer/>
         </div>
     );
